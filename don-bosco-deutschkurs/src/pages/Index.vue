@@ -5,6 +5,8 @@
     <Appointment />
     <Participate />
     <Photos />
+    <Testimonial />
+    <Ending />
   </Layout>
 </template>
 
@@ -14,6 +16,9 @@ import AboutUs from '../components/AboutUs.vue';
 import Appointment from  '../components/Appointment.vue';
 import Participate from  '../components/Participate.vue';
 import Photos from '../components/Photos.vue';
+import Testimonial from '../components/Testimonial.vue';
+import Ending from '../components/Ending.vue';
+
 export default {
   metaInfo: {
     title: "Don Bosco für Flüchtlinge",
@@ -23,7 +28,9 @@ export default {
     AboutUs,
     Appointment,
     Participate,
-    Photos
+    Photos,
+    Testimonial,
+    Ending
   }
 }
 </script>
