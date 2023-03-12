@@ -49,7 +49,7 @@
         ></g-image>
       </div>
     </div>
-    <g-link class="btn" to="/">Zu allen Fotos</g-link>
+    <g-link class="btn" to="/photos">Zu allen Fotos</g-link>
   </section>
 </template>
 
