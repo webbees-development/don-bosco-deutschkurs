@@ -8,7 +8,6 @@
       <figure>
         <div class="image-container">
           <g-image
-            class="image"
             src="../assets/images/image-gallery/mithelfen-img1.jpg"
           />
         </div>
@@ -26,7 +25,6 @@
       <figure>
         <div class="image-container">
           <g-image
-            class="image"
             src="../assets/images/image-gallery/mithelfen-img2.jpg"
           />
         </div>
@@ -41,7 +39,6 @@
       <figure>
         <div class="image-container">
           <g-image
-            class="image"
             src="../assets/images/image-gallery/mithelfen-img3.jpg"
           />
         </div>
