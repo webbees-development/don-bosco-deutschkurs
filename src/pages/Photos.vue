@@ -9,7 +9,7 @@
       <div class="photos-container">
         <figure v-for="(photo, index) in photos" :key="index">
           <div class="photo-card">
-            <g-image class="image" :src="photo.pathLong" />
+            <g-image :src="photo.pathLong" />
           </div>
         </figure>
       </div>
@@ -87,9 +87,10 @@ export default {
   }
 }
 .photo-card > img {
-  padding: 6.5% 4.1% 13% 4.5%;
-  object-fit: cover;
   aspect-ratio: 1.3;
+  object-fit: cover;
+  padding: 6.5% 4.1% 13% 4.5%; 
+  width: 100%;
 }
 figure {
   display: inline-block;
