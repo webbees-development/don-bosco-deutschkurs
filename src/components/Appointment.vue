@@ -55,15 +55,20 @@ p {
 }
 .image {
   width: min(50vw, 61rem);
-  aspect-ratio: 1.3;
-  object-fit: cover;
+
+  img{
+    height: 100%;
+    object-fit: cover;
+
   @media (max-width: 1600px) {
     aspect-ratio: 1.2;
   }
   @media (max-width: 1400px) {
     aspect-ratio: 1.3;
   }
+  }
 }
+
 @media (max-width: $tablet-break) {
   .appointment {
     flex-direction: column-reverse;
