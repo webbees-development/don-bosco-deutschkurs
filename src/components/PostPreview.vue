@@ -2,11 +2,13 @@
   <transition name="fade" appear>
     <g-link :to="link" class="preview">
       <figure>
-        <g-image immediate class="post-image" :src="image.src" :alt="image.alt"></g-image>
+        <g-image immediate :class="['post-image', white_border ? 'white-border': '']" :src="image.src" :alt="image.alt"></g-image>
+        <figcaption>
+          <h3>{{ title }}</h3>
+          <p>{{ excerpt }}...</p>
+          <a class="read-more">weiterlesen ></a>
+        </figcaption>
       </figure>
-      <h3>{{ title }}</h3>
-      <p>{{ excerpt }}...</p>
-      <a class="read-more">weiterlesen ></a>
     </g-link>
   </transition>
 </template>
@@ -30,6 +32,10 @@ export default {
       type: String,
       required: true,
     },
+    white_border:{
+      type: Boolean,
+      default: false,
+    }
   }
 }
 </script>
@@ -43,6 +49,18 @@ h3 {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
   word-wrap: break-word;
+}
+
+figcaption{
+  max-width: 50ch;
+  margin-inline: auto;
+
+  @media (max-width: 1500px) {
+    max-width: 60ch;
+  }
+  @media (max-width: 800px) {
+  max-width: 90ch;
+  }
 }
 
 p {
@@ -99,5 +117,9 @@ p {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.white-border{
+  background: white;
 }
 </style>
