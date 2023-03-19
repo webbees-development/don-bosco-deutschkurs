@@ -14,16 +14,17 @@
       </div>
       <div class="stop-war">
         <span>Please stop war in</span>
-        <g-image
-          v-for="(flag, index) in flags"
-          :key="index"
-          class="flag"
-          data-visible="false"
-          :src="flag.node.image.src"
-          :alt="flag.node.image.alt"
-          immediate
-        >
-        </g-image>
+        <div class="flags">
+          <g-image
+            v-for="(flag, index) in flags"
+            :key="index"
+            class="flag"
+            data-visible="false"
+            :src="flag.node.image.src"
+            :alt="flag.node.image.alt"
+            immediate
+          />
+        </div>
       </div>
     </div>
 
@@ -133,11 +134,17 @@ export default {
       const images = document.getElementsByClassName("flag");
       let i = 0;
       images[i].dataset.visible = "true";
+
       function changeFlag() {
         images[i].dataset.visible = "false";
-        i < images.length - 1 ? (i += 1) : (i = 0);
+        if (i < images.length - 1) {
+          i += 1
+        } else {
+          i = 0
+        }
         images[i].dataset.visible = "true";
       }
+
       setInterval(changeFlag, 4000);
     },
   },
@@ -209,28 +216,41 @@ li + li {
   max-width: 7.5rem;
   padding-inline-end: 1.5rem;
 }
-.flag {
-  max-width: 6rem;
-}
-.flag {
-  &[data-visible="false"] {
-    display: none;
+
+.stop-war {
+
+  img {
+    max-width: 6rem;
+
+    @media (max-width: $mobile-break) {
+      max-width: 3rem;
+    }
   }
-  &[data-visible="true"] {
-    display: block;
+
+  span {
+    padding-inline: 1rem 2rem;
+
+    @media (max-width: $mobile-break) {
+      padding-inline: 0.5rem;
+      font-size: 1rem;
+    }
   }
-}
-.stop-war img {
-  max-width: 6rem;
-  @media (max-width: $mobile-break) {
-    max-width: 3rem;
-  }
-}
-.stop-war span {
-  padding-inline: 1rem 2rem;
-  @media (max-width: $mobile-break) {
-    padding-inline: 0.5rem;
-    font-size: 1rem;
+
+  .flags {
+    position: relative;
+  } 
+
+  .flag {
+    position: absolute;
+    transform: translateY(-50%);
+    transition: opacity 1000ms ease-in-out;
+
+    &[data-visible="false"] {
+      opacity: 0;
+    }
+    &[data-visible="true"] {
+      opacity: 1;
+    }
   }
 }
 
