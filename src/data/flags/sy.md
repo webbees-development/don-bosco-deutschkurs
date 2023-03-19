@@ -1,6 +1,6 @@
 ---
 name: "Syrien"
 image:
-  src: sy.svg
+  src: ./sy.svg
   alt: Flagge Syriens
 ---

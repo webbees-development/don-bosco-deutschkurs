@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :texture_background="true">
     <section class="photos">
       <h2>Freude erleben und teilen:</h2>
       <p>

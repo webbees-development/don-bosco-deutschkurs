@@ -1,13 +1,17 @@
 <template>
-  <header>
+  <!-- background -->
+  <!-- logo -->
+  <!-- Spenden -->
+  <header :class="[ texture_background ? 'texture-background' : '']">
     <div class="container">
       <div class="logo">
-        <g-link to="/"
-          ><g-image
+        <g-link to="/">
+          <g-image
+            immediate
             src="../assets/images/logo/logo.png"
             alt="Don Bosco für Flüchtlinge Logo"
-          ></g-image
-        ></g-link>
+          />
+        </g-link>
       </div>
       <div class="stop-war">
         <span>Please stop war in</span>
@@ -16,8 +20,9 @@
           :key="index"
           class="flag"
           data-visible="false"
-          :src="require(`!!assets-loader!~/data/flags/${flag.node.image.src}`)"
+          :src="flag.node.image.src"
           :alt="flag.node.image.alt"
+          immediate
         >
         </g-image>
       </div>
@@ -62,6 +67,12 @@ query {
 
 <script>
 export default {
+  props: {
+    texture_background: {
+      type: Boolean,
+      default: false,
+    }
+  },
   data() {
     return {
       flags: [],
@@ -209,6 +220,11 @@ li + li {
     padding-inline: 0.5rem;
     font-size: 1rem;
   }
+}
+
+.texture-background {
+  background: url("../assets/images/index/hintergrund.png");
+  background-repeat: repeat;
 }
 .mobile-nav-toggle {
   display: none;

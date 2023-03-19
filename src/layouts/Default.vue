@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <Header />
+    <Header :texture_background="texture_background" />
     <main>
       <slot />
     </main>    
@@ -15,6 +15,10 @@ import Footer from  '../components/Footer.vue';
 import BackToTopArrow from '../components/BackToTopArrow.vue';
 
 export default {
+  props: {
+    texture_background: Boolean,
+    default: false,
+  },
   components: {
     Header,
     Footer,

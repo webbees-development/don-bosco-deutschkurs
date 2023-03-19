@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout texture_background>
     <section>
       <h1>Impressum</h1>
       <h2>Inhaber der Webseite</h2>

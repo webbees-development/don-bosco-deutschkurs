@@ -1,6 +1,6 @@
 ---
 name: "Ukraine"
 image:
-  src: ua.svg
+  src: ./ua.svg
   alt: Flagge der Ukraine
 ---

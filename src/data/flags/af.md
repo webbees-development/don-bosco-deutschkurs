@@ -1,6 +1,6 @@
 ---
 name: "Afghanistan"
 image:
-  src: af.svg
+  src: ./af.svg
   alt: Flagge Afghanistans
 ---

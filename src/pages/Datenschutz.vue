@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout texture_background>
     <h1>Datenschutzerklärung</h1>
 
     <div class="card">
