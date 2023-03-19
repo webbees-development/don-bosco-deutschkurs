@@ -6,7 +6,7 @@
         v-for="{ node } in $static.posts.edges"
         :key="node.id"
         class="slide generic-slide"
-        :link="`/${node.id}`"
+        :link="`/beitrag/${node.id}`"
         :image="node.featured_image"
         :title="node.title"
         :excerpt="node.excerpt"
