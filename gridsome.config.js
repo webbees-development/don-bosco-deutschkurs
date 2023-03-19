@@ -24,8 +24,32 @@ module.exports = {
         typeName: "Flag",
       },
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "./src/data/posts/*.md",
+        typeName: "Post",
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './src/data/images/*.md',
+        typeName: 'CustomImage',
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+    },
+    {
+      use: 'gridsome-plugin-robots',
+    }
   ],
   siteName: "Don Bosco für Flüchtlinge",
   siteUrl: "https://fluechtlinge.donbosco.at/",
-  siteDescription: "Finden Sie Informationen über das Engagement der Salesianer Don Boscos für Flüchtlinge."
+  siteDescription: "Finden Sie Informationen über das Engagement der Salesianer Don Boscos für Flüchtlinge.",
+  templates: {
+    Post: '/beitrag/:id',
+  },
+  titleTemplate: '%s | Don Bosco für Flüchtlinge',
 };
