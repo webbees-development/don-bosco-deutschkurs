@@ -15,8 +15,8 @@
     <div class="content">
       <h1>Du willst dich in Wien <br />für Flüchtlinge einsetzen?</h1>
       <p>
-        Nimm dir 2 Stunden, teile deine Sprache Deutsch und bereichere damit
-        (d)ein ganzes Leben.
+        Nimm dir 2 Stunden Zeit, teile deine Sprache Deutsch und bereichere damit
+        (d)ein Leben.
       </p>
       <p>
         Komm zu einem unserer Deutschkurse <br />für Flüchtlinge aus

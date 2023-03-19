@@ -1,9 +1,9 @@
 <template>
   <section id="photos" class="photos">
-    <h2>Freude erleben und teilen:</h2>
+    <h2>Freude erleben und teilen</h2>
     <p>
       Unsere Fotogalerie ist bunt und voller Leben.<br />
-      Schau’ dich gerne um:
+      Schau’ dich gerne um.
     </p>
     <div class="image-grid">
       <div class="image">

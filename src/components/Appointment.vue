@@ -6,8 +6,8 @@
         damit auch dir selbst etwas Gutes.
       </h2>
       <p>
-        Nimm dir 2 Stunden, teile deine Sprache Deutsch und bereichere damit
-        (d)ein ganzes Leben.
+        Nimm dir 2 Stunden Zeit, teile deine Sprache Deutsch und bereichere damit
+        (d)ein Leben.
       </p>
       <g-link class="btn" :to="$static.metadata.calendly_url"
         >Probetermin vereinbaren</g-link

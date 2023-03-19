@@ -31,7 +31,7 @@
         <figcaption>
           <h3>2. Sei bei einem Kurs dabei</h3>
           <p>
-            Du kommst an dem Tag, den du dir ausgesucht hast und bist einmal
+            Du kommst an dem Tag, den du dir ausgesucht hast, und bist einmal
             live dabei, wenn wir einen Deutschkurs für Flüchtlinge veranstalten.
           </p>
         </figcaption>
