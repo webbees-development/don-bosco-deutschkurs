@@ -55,6 +55,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  word-wrap: break-word;
+}
+
 p + p,
 p + h3,
 p + ul,
@@ -84,9 +88,13 @@ ul {
   margin-block-end: 8rem;
   margin-block-start: 4rem;
   margin-inline: auto;
-  max-width: 800px;
+  max-width: 1100px;
   padding: 3rem 3rem;
   text-align: center;
+
+  @media (max-width: 1164px) {
+    margin-inline: 2rem;
+  }
 }
 
 .quelle {
