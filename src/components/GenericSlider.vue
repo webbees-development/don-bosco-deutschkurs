@@ -306,8 +306,8 @@
   
   /* utility */
   .hide {
-    //display: none;
-    opacity: 1;
+    display: none;
+    opacity: 0;
   }
   
   .show {
