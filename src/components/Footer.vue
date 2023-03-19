@@ -43,8 +43,8 @@
             class="facebook"
             href="https://www.facebook.com/donbosco.fuerfluechtlinge"
           >
-          </g-link
-          ><g-link
+          </g-link>
+          <g-link
             class="instagram"
             href="https://www.instagram.com/donbosco4refugees/"
           >
