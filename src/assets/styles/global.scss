@@ -21,12 +21,12 @@ $mobile-break: 600px;
 
   font-size: 16px;
 
-  --fs-100: 1.125em;
-  --fs-200: 1.25em;
-  --fs-300: 1.375em;
-  --fs-400: 1.563em;
-  --fs-500: 1.875em;
-  --fs-600: 3.125em;
+  --fs-100: 1.125rem;
+  --fs-200: 1.25rem;
+  --fs-300: 1.375rem;
+  --fs-400: 1.563rem;
+  --fs-500: 1.875rem;
+  --fs-600: 3.125rem;
 
   --fs-primary-heading: var(--fs-600);
   --fs-button: var(--fs-200);
@@ -41,7 +41,7 @@ $mobile-break: 600px;
   }
   @media (max-width: 1400px) {
     font-size: 14px;
-    --fs-600: 2.75em;
+    --fs-600: 2.75rem;
   }
   @media (max-width: 1300px) {
     font-size: 13px;
@@ -61,7 +61,7 @@ $mobile-break: 600px;
 
   @media (max-width: 380px) {
     font-size: 9px;
-    --fs-600: 2.3em;
+    --fs-600: 2.3rem;
   }
 }
 
