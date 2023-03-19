@@ -183,17 +183,33 @@ export default {
   width: 100%;
 }
 figure {
+  position: relative;
   display: inline-block;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   margin: 1rem;
   max-width: 40rem;
   min-width: 0;
+  transition: transform 150ms ease-in;
+
+  &:hover {
+    transform: scale(1.5) rotate(0);
+    z-index: 100;
+  }
+
   @media (max-width: 488px) {
     transform: rotate(12deg);
   }
 }
+
 figure:nth-last-of-type(even) {
   transform: rotate(12deg);
+  transition: transform 150ms ease-in;
+
+  &:hover {
+    transform: scale(1.5) rotate(0);
+    z-index: 100;
+  }
+
   @media (max-width: 720px) {
     transform: rotate(0);
   }
