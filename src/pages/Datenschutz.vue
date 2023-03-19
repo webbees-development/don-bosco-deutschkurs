@@ -67,7 +67,7 @@ export default {
   metaInfo() {
     const siteUrl = this.$static.metadata.siteUrl;
     const pageTitle = 'Datenschutz' +  ' | ' + this.$static.metadata.siteName;
-    const pageDescription = "";
+    const pageDescription = "Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.";
     const pageUrl = `${siteUrl}${this.$route.path}`;
     const image = this.$static.customImage ? this.$static.customImage.src : undefined;
     const imagePath = image ? `${siteUrl}${image.src}` : ''

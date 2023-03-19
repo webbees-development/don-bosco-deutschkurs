@@ -38,7 +38,7 @@ export default {
   metaInfo() {
     const siteUrl = this.$static.metadata.siteUrl;
     const pageTitle = 'Startseite' +  ' | ' + this.$static.metadata.siteName;
-    const pageDescription = "";
+    const pageDescription = "Deutschkurse für Flüchtlinge. Finden Sie Informationen über das Engagement der Salesianer Don Boscos für Flüchtlinge in Wien.";
     const pageUrl = `${siteUrl}${this.$route.path}`;
     const image = this.$static.customImage ? this.$static.customImage.src : undefined;
     const imagePath = image ? `${siteUrl}${image.src}` : ''

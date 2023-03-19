@@ -71,7 +71,7 @@ export default {
   metaInfo() {
     const siteUrl = this.$static.metadata.siteUrl;
     const pageTitle = 'Impressum' + ' | ' + this.$static.metadata.siteName;
-    const pageDescription = "";
+    const pageDescription = "Don Bosco für Flüchtlinge. Salesianer Don Boscos. ";
     const pageUrl = siteUrl;
     const image = this.$static.customImage ? this.$static.customImage.src : undefined;
     const imagePath = image ? `${siteUrl}${image.src}` : ''

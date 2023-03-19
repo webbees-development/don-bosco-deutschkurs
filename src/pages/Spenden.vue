@@ -34,7 +34,7 @@ export default {
   metaInfo() {
     const siteUrl = this.$static.metadata.siteUrl;
     const pageTitle = 'Spenden' + ' | ' + this.$static.metadata.siteName;
-    const pageDescription = "";
+    const pageDescription = "Die Initiative „Don Bosco für Flüchtlinge“ bietet kostenlose Deutschkurse für Geflüchtete an. Die Fähigkeit, Deutsch zu sprechen, ist für Flüchtlinge von entscheidender Bedeutung.";
     const pageUrl = siteUrl;
     const image = this.$static.customImage ? this.$static.customImage.src : undefined;
     const imagePath = image ? `${siteUrl}${image.src}` : ''

@@ -108,7 +108,7 @@ export default {
   metaInfo() {
     const siteUrl = this.$static.metadata.siteUrl;
     const pageTitle = 'Erfolgsgeschichten & Worte der Dankbarkeit' +  ' | ' + this.$static.metadata.siteName;
-    const pageDescription = "";
+    const pageDescription = "Lesen Sie unsere Beiträge zu Erfolgsgeschichten & Worte der Dankbarkeit. Erfahren Sie mehr über unsere Deutschkurse für Flüchtlinge in Wien.";
     const pageUrl = `${siteUrl}${this.$route.path}`;
     const image = this.$static.customImage ? this.$static.customImage.src : undefined;
     const imagePath = image ? `${siteUrl}${image.src}` : ''
