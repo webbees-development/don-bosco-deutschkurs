@@ -26,5 +26,6 @@ module.exports = {
     },
   ],
   siteName: "Don Bosco für Flüchtlinge",
-  siteUrl: "",
+  siteUrl: "https://fluechtlinge.donbosco.at/",
+  siteDescription: "Finden Sie Informationen über das Engagement der Salesianer Don Boscos für Flüchtlinge."
 };
