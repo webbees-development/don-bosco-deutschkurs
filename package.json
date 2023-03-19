@@ -7,9 +7,12 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-robots": "^0.2.1",
+    "vue-infinite-loading": "^2.4.5"
   },
   "devDependencies": {
     "sass": "^1.56.1",
