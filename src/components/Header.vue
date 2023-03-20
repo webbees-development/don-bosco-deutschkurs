@@ -1,5 +1,4 @@
 <template>
-  <!-- Flaggen -->
   <!-- make some kind of separation between texture header and texture sections-->
   <header :class="[ texture_background ? 'texture-background' : '']">
     <div class="container">
