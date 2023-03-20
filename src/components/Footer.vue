@@ -16,9 +16,9 @@
         >
       </div>
 
-      <nav>
+      <nav v-if="$route.path === '/'">
         <ul aria-label="Primary" role="list" class="nav-list">
-          <li><g-link to="/">Startseite</g-link></li>
+          <li @click="scrollToTop">Startseite</li>
           <li><g-link to="/#about-us">Über uns</g-link></li>
           <li><g-link to="/#blog">Blog</g-link></li>
           <li><g-link to="/#photos">Fotos</g-link></li>
@@ -70,8 +70,14 @@ query {
 }
 </static-query>
 
-<script>
+<script scoped>
 export default {
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+      console.log("scrolling")
+    }
+  },
   mounted() {
     document.getElementById(
       "year"

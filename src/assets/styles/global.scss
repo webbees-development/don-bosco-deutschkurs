@@ -11,6 +11,8 @@ $tablet-break: 1024px;
 $mobile-break: 600px;
 
 :root {
+  scroll-behavior: smooth;
+
   --clr-primary: #9a634a;
   --clr-text: #000000;
   --clr-neutral: #fff;
