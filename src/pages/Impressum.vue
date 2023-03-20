@@ -2,7 +2,7 @@
   <Layout texture_background>
     <section class="impressum">
       <h1>Impressum</h1>
-      <h3>Inhaber der Webseite</h3>
+      <!-- <h3>Inhaber der Webseite</h3> -->
       <div class="grid">
         <div>
           <h3>Adresse</h3>
@@ -39,7 +39,7 @@
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <h2>Urheberrecht</h2>
       <p>Der Inhalt dieser Webseite, Text und Bilder, ist urheberrechtlich geschützt. Bilder, Texte und sonstige Inhalte der Webseite, dürfen nur mit schriftlicher Genehmigung verwendet werden.</p>
       <p>© <span id="year"></span> Don Bosco für Flüchtlinge</p>
@@ -47,7 +47,7 @@
 
       <h2>Haftungsausschluss</h2>
       <p>Alle Angaben auf dieser Webseite erfolgen ohne Gewähr, jede Haftung dafür ist ausgeschlossen. Schreibfehler und Irrtümer vorbehalten.</p>
-    </section>
+    </section> -->
   </Layout>
 </template>
 
@@ -151,8 +151,9 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/styles/global.scss";
 
+// Remove this, just temporary for release
 h1{
-  //padding-block-end: 3rem;
+  padding-block-end: 3rem;
 }
 
 h2,h3{
