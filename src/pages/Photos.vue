@@ -7,12 +7,20 @@
         um:
       </p>
       <div class="photos-container">
-        <figure v-for="(photo, index) in photos" :key="index">
+        <figure v-for="(photo, index) in loadedPhotos" :key="index">
           <div class="photo-card">
-            <g-image :src="photo.pathLong" />
+            <g-image :src="photo.node.src" />
           </div>
         </figure>
       </div>
+      <ClientOnly>
+        <infinite-loading @infinite="infiniteHandler" spinner="spiral">
+          <div slot="no-more">
+          </div>
+          <div slot="no-results">
+          </div>
+        </infinite-loading>
+      </ClientOnly>
     </section>
   </Layout>
 </template>
@@ -30,28 +38,49 @@
   }
 </static-query>
 
+<page-query>
+  query ($page: Int) {
+    images: allGalleryImage(perPage: 9, page: $page) @paginate {
+      pageInfo {
+        totalPages
+        currentPage
+      }
+      edges {
+        node {
+          src
+          alt
+        }
+      }
+    } 
+  }
+</page-query>
+
 <script>
 export default {
   data() {
     return {
-      photos: [],
-    };
+      loadedPhotos: [],
+      currentPage: 1,
+    }
   },
-  mounted() {
-    this.importAll(
-      require.context(
-        "../assets/images/image-gallery",
-        true,
-        /\.(png|jpg|svg)$/
-      )
-    );
+  created() {
+    this.loadedPhotos.push(...this.$page.images.edges);
   },
   methods: {
-    importAll(r) {
-      r.keys().forEach((key) =>
-        this.photos.push({ pathLong: r(key), pathShort: key })
-      );
-    },
+    async infiniteHandler($state) {
+      if (this.currentPage + 1 > this.$page.images.pageInfo.totalPages) {
+        $state.complete();
+      } else {
+        const { data } = await this.$fetch(`/photos/${this.currentPage + 1}`)
+        if (data.images.edges.length) {
+          this.currentPage = data.images.pageInfo.currentPage;
+          this.loadedPhotos.push(...data.images.edges);
+          $state.loaded();
+        } else {
+          $state.complete();
+        }
+      }
+    }
   },
   metaInfo() {
     const siteUrl = this.$static.metadata.siteUrl;
