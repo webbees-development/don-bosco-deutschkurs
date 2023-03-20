@@ -1,20 +1,26 @@
 ---
-id: news-id-3
-title: title B3
-description: Description
-excerpt:
+id: kurzpotrait-nour
+title: Kurzpotrait - Nour
+description: Kurzpotrait - Nour
+excerpt: Unsere Nour träumt groß und wird auch großes erreichen! ❤️
 date: 2022-01-01
 featured_image:
-  src: ./images/blog-img3.png
-  alt: Blog3
-gallery_images:
-  - src: ./images/blog-img1.png
-    alt: ""
-  - src: ./images/blog-img1.png
-    alt: ""
-  - src: ./images/blog-img1.png
-    alt: ""
+  src: ./images/blog-3.1.jpg
+  alt: Nour
 published: true
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+### ...was gibt es über dich zu wissen?
+Ich war 24 Jahre alt, wie ich mit dem Deutsch lernen begonnen habe. Was besonders dabei hilft ist, eine positive Einstellung gegenüber der neuen schwierigen Sprache zu haben.
+
+### ...was war dein schönstes Erlebnis aus dem Deutschkurs?
+Da ich hier ganz alleine bin und mir familiäre Geborgenheit fehlt, habe ich mich besonders auf die gemeinsamen Feiertage gefreut. Die Weihnachtsfeiern waren bestimmt die schönsten Erlebnisse bei Don Bosco für Flüchtlinge.
+
+### ...wie sieht dein Alltag heute aus?
+Mein Alltag sieht heute extrem hektisch aus. Ich habe vor kurzem meine Ausbildung als Ärztin für Allgemeinmedizin abgeschlossen und absolviere derzeit mein Pflichtpraktikum.
+
+### ... worüber träumst du?
+Ganz banal träume ich von einer Welt, wo jede Frau und jedes Mädchen groß und wild träumen darf, und die volle Macht über ihr Leben haben kann.
+
+### ...möchtest du noch etwas sagen?
+Ich habe im Deutschkurs meine beste Freundin fürs Leben gefunden. Vielleicht vergesse ich die deutsche Sprache, wenn ich 90 Jahre alt bin, aber die warmen und treuen Herzen vergisst man nie.
