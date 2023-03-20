@@ -1,7 +1,7 @@
 ---
-id: news-id-2
-title: Kurzpotrait - Sajeda
-description: Description
+id: kurzportrait-sajeda
+title: Kurzportrait - Sajeda
+description: Kurzportrait - Sajeda
 excerpt:
 date: 2022-01-01
 featured_image:

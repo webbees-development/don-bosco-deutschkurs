@@ -1,7 +1,7 @@
 ---
-id: kurzpotrait-nour
-title: Kurzpotrait - Nour
-description: Kurzpotrait - Nour
+id: kurzportrait-nour
+title: Kurzportrait - Nour
+description: Kurzportrait - Nour
 excerpt: Unsere Nour träumt groß und wird auch großes erreichen! ❤️
 date: 2022-01-01
 featured_image:
@@ -17,7 +17,7 @@ Ich war 24 Jahre alt, wie ich mit dem Deutsch lernen begonnen habe. Was besonder
 Da ich hier ganz alleine bin und mir familiäre Geborgenheit fehlt, habe ich mich besonders auf die gemeinsamen Feiertage gefreut. Die Weihnachtsfeiern waren bestimmt die schönsten Erlebnisse bei Don Bosco für Flüchtlinge.
 
 ### ...wie sieht dein Alltag heute aus?
-Mein Alltag sieht heute extrem hektisch aus. Ich habe vor kurzem meine Ausbildung als Ärztin für Allgemeinmedizin abgeschlossen und absolviere derzeit mein Pflichtpraktikum.
+Mein Alltag sieht heute extrem hektisch aus. Ich habe vor kurzem die Facharztprüfung für Allgemeinmedizin bestanden und bin seither auf der neurochirurgischen Abteilung tätig.
 
 ### ... worüber träumst du?
 Ganz banal träume ich von einer Welt, wo jede Frau und jedes Mädchen groß und wild träumen darf, und die volle Macht über ihr Leben haben kann.

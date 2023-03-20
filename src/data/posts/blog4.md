@@ -1,20 +1,13 @@
 ---
-id: news-id-4
-title: title B4 abla blab blllll balallaa vllll avladfadl
-description: Description
-excerpt:
+id: kurzportrait-rami
+title: Kurzportrait - Rami
+description: Kurzportrait - Rami
+excerpt: Rami hat vielen geholfen, sich in Österreich zu integrieren. ❤️
 date: 2022-01-01
 featured_image:
   src: ./images/blog-img3.png
-  alt: Blog1
-gallery_images:
-  - src: ./images/blog-img1.png
-    alt: ""
-  - src: ./images/blog-img1.png
-    alt: ""
-  - src: ./images/blog-img1.png
-    alt: ""
+  alt: Rami
 published: true
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Im Jahr 2015 habe ich am Deutschkurs teilgenommen, dadurch hat sich mein Leben verändert und mir eine Perspektive eröffnet. Durch Don Bosco für Flüchtlinge habe ich meine Fähigkeiten weiterentwickeln können. Ich arbeite gerade als Sozialarbeiter im öffentlichen Raum. Ich habe eine schöne Zeit gehabt und der Deutschkurs für Flüchtlinge war/ist meine zweite Familie. Ich habe viele Freunde im Kurs gefunden. Außerdem habe ich mein Schatzi Riham♥️ im Deutschkurs kennengelernt.
