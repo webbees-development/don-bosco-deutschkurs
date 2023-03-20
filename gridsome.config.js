@@ -39,6 +39,13 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './src/data/gallery_images/*.md',
+        typeName: 'GalleryImage',
+      }
+    },
+    {
       use: '@gridsome/plugin-sitemap',
     },
     {
