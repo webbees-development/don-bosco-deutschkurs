@@ -1,8 +1,8 @@
 <template>
   <Layout texture_background>
-    <section>
+    <section class="impressum">
       <h1>Impressum</h1>
-      <h2>Inhaber der Webseite</h2>
+      <h3>Inhaber der Webseite</h3>
       <div class="grid">
         <div>
           <h3>Adresse</h3>
@@ -151,6 +151,15 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/styles/global.scss";
 
+h1{
+  //padding-block-end: 3rem;
+}
+
+h2,h3{
+  color: black;
+  font-weight:lighter;
+}
+
 a {
   color: var(--clr-text);
   font-family: var(--ff-primary);
@@ -164,14 +173,18 @@ a {
   }
 }
 
+.impressum{
+  padding-block: 9rem;
+}
+
 h1 {
-  @media (max-width: 400px) {
-    font-size: 14vw;
-  }
+//   @media (max-width: 400px) {
+//     font-size: 14vw;
+//   }
 }
 h2 {
-  margin-block-end: 1em;
-  margin-block-start: 2em;
+  // margin-block-end: 1em;
+  // margin-block-start: 2em;
 }
 
 section {
