@@ -1,6 +1,6 @@
 <template>
   <section id="about-us" class="about-us">
-    <g-image src="../assets/images/index/sprachen.png" />
+    <g-image src="../assets/images/index/sprachen.png" alt="Zeichnung von mehreren Menschen verschiedener Herkunft, die Sie auf unterschiedlichen Sprachen begrüßen" />
     <div>
       <h2>
         Wir helfen Flüchtlingen in Wien, um Perspektiven zu eröffnen. Sei auch
