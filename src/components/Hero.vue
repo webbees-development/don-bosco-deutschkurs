@@ -181,7 +181,7 @@ a {
 }
 .image > img {
   width: 100%;
-  padding: 13% 12% 22% 11%;
+  padding: 13% 11.9% 22.3% 11.4%;
   aspect-ratio: 1.2;
   object-fit: cover;
 }
