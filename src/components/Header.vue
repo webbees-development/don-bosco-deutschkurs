@@ -208,7 +208,7 @@ li + li {
   fill: white;
   margin-inline-end: 0.5rem;
   vertical-align: top;
-  width: 25px;
+  width: 1.5rem;
 }
 
 .hide-tablet {
