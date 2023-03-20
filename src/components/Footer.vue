@@ -11,9 +11,9 @@
           Wir helfen Flüchtlingen in Wien, um <br />Perspektiven zu eröffnen.
           Sei’ auch dabei.
         </h3>
-        <g-link class="btn" :to="$static.metadata.calendly_url"
-          >Probetermin vereinbaren</g-link
-        >
+        <g-link class="btn" :to="$static.metadata.calendly_url">
+          Probetermin vereinbaren
+        </g-link>
       </div>
 
       <nav v-if="$route.path === '/'">
@@ -32,9 +32,9 @@
           <p>1030 Wien</p>
           <p>
             Mail:
-            <g-link href="mailto:donbosco.deutschkurs@gmail.com"
-              >donbosco.deutschkurs@gmail.com</g-link
-            >
+            <g-link href="mailto:donbosco.deutschkurs@gmail.com">
+              donbosco.deutschkurs@gmail.com
+            </g-link>
           </p>
         </div>
 
@@ -42,12 +42,12 @@
           <g-link
             class="facebook"
             href="https://www.facebook.com/donbosco.fuerfluechtlinge"
-          >
+          ><span class="sr-only">Facebook Seite von Don Bosco für Flüchtlinge</span>
           </g-link>
           <g-link
             class="instagram"
             href="https://www.instagram.com/donbosco4refugees/"
-          >
+          ><span class="sr-only">Instagram Seite von Don Bosco für Flüchtlinge</span>
           </g-link>
         </div>
       </div>
@@ -75,7 +75,6 @@ export default {
   methods: {
     scrollToTop() {
       window.scrollTo(0, 0);
-      console.log("scrolling")
     }
   },
   mounted() {
