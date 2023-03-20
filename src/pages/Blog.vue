@@ -7,7 +7,7 @@
           <h3>{{ loadedPosts[0].node.title }}</h3>
           <hr>
           <p>{{ loadedPosts[0].node.excerpt }}</p>
-          <a class="read-more">weiterlesen ></a>
+          <g-link :to="link" class="read-more">weiterlesen ></g-link>
         </div>
         <div>
           <g-image immediate :src="loadedPosts[0].node.featured_image.src" :alt="loadedPosts[0].node.featured_image.alt"></g-image>

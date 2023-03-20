@@ -6,7 +6,7 @@
         <figcaption>
           <h3>{{ title }}</h3>
           <p>{{ excerpt }}...</p>
-          <a class="read-more">weiterlesen ></a>
+          <g-link :to="link" class="read-more">weiterlesen ></g-link>
         </figcaption>
       </figure>
     </g-link>
