@@ -59,14 +59,19 @@ query {
 <script lang="js">
 export default {
   mounted() {
-    const welcomeContainer = document.querySelector(".background-languages");
-    const welcomeSpan = document.querySelector(".welcome");
-    for (let i = 1; i < 11; i++) {
-    const newNode = welcomeSpan.cloneNode(true);
-    newNode.style.left = `-${3 * i}rem`;
-    welcomeContainer.appendChild(newNode);
-    }
+    window.onload = this.addBackgroundLanguages;
   },
+  methods: {
+    addBackgroundLanguages() {
+      const welcomeContainer = document.querySelector(".background-languages");
+      const welcomeSpan = document.querySelector(".welcome");
+      for (let i = 1; i < 11; i++) {
+        const newNode = welcomeSpan.cloneNode(true);
+        newNode.style.left = `-${3 * i}rem`;
+        welcomeContainer.appendChild(newNode);
+      }
+    }
+  }
 };
 </script>
 
