@@ -6,14 +6,13 @@
       </div>
       <article>
         <div class="content">
-          <h1>{{ $page.post.title }}</h1>
+          <h3>{{ $page.post.title }}</h3>
           <div class="article-content" v-html="$page.post.content"></div>
           <g-link class="back-to-blog" to="/blog">< zurück zu Beiträgen</g-link>
         </div>
         <div class="share-buttons">
           <FacebookShareButton :url="$route ? $static.metadata.siteUrl + $route.path : $static.metadata.siteUrl"></FacebookShareButton>
           <!-- Instagram -->
-
           <TwitterShareButton :url="$route ? $static.metadata.siteUrl + $route.path : $static.metadata.siteUrl"></TwitterShareButton>
           <PinterestShareButton :url="$route ? $static.metadata.siteUrl + $route.path : $static.metadata.siteUrl"></PinterestShareButton>
           <EmailShareButton :url="$route ? $static.metadata.siteUrl + $route.path : $static.metadata.siteUrl"></EmailShareButton>
@@ -71,24 +70,134 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// Responsiveness
+@media (max-width: 1904px) {
+  article {
+    margin-inline-end: calc(3rem + var(--padding-global-inline));
+  }
+  .image-container {
+    padding-inline-start: calc(3rem + var(--padding-global-inline));
+  }
+}
+
+@media (max-width: 1872px) {
+  article {
+    margin-inline-end: calc(2rem + var(--padding-global-inline));
+  }
+  .image-container {
+    padding-inline-start: calc(2rem + var(--padding-global-inline));
+  }
+}
+
+@media (max-width: 1840px) {
+  article {
+    margin-inline-end: calc(1rem + var(--padding-global-inline));
+  }
+  .image-container {
+    padding-inline-start: calc(1rem + var(--padding-global-inline));
+  }
+}
+
+@media (max-width: 1808px) {
+  article {
+    margin-inline-end: var(--padding-global-inline);
+  }
+  .image-container {
+    padding-inline-start: var(--padding-global-inline);
+  }
+}
+
+@media (max-width: 1700px) {
+  article {
+    margin-inline-end: calc(3.5rem + var(--padding-global-inline));
+  }
+  .image-container {
+    padding-inline-start: calc(3.5rem + var(--padding-global-inline));
+  }
+}
+
+@media (max-width: 1684px) {
+  article {
+    margin-inline-end: calc(3rem + var(--padding-global-inline));
+  }
+  .image-container {
+    padding-inline-start: calc(3rem + var(--padding-global-inline));
+  }
+}
+
+@media (max-width: 1652px) {
+  article {
+    margin-inline-end: calc(2rem + var(--padding-global-inline));
+  }
+  .image-container {
+    padding-inline-start: calc(2rem + var(--padding-global-inline));
+  }
+}
+
+@media (max-width: 1620px) {
+  article {
+    margin-inline-end: calc(1rem + var(--padding-global-inline));
+  }
+  .image-container {
+    padding-inline-start: calc(1rem + var(--padding-global-inline));
+  }
+}
+
+@media (max-width: 1588px) {
+  article {
+    margin-inline-end: var(--padding-global-inline);
+  }
+  .image-container {
+    padding-inline-start: var(--padding-global-inline);
+  }
+}
+</style>
+
+<style lang="scss" scoped>
 @import "~/assets/styles/global.scss";
 
 article {
   background-image: url("../assets/images/index/hintergrund.png");
   background-repeat: repeat;
-  transform: translateY(-9rem);
-  margin-inline: auto;
+  margin-block-end: 15rem;
+  margin-block-start: 9rem;
+  margin-inline-end: calc(3.5rem + var(--padding-global-inline));
+  margin-inline-start: auto;
   max-width: 59rem;
   padding: 1.5rem;
   position: relative;
+  transform: translateY(6rem);
+
+  @media (max-width: 1100px) {
+    margin-block-end: 21rem;
+    transform: translateY(12rem);
+  }
+
+  @media (max-width: $tablet-break) {
+    margin-block-start: var(--padding-global-inline);
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    margin-block-end: calc(30vw + 13rem);
+    transform: translateY(30vw);
+  }
 
   @media (min-width: $mobile-break) and (max-width: $tablet-break) {
-    width: 80%;
+    width: 70%;
+  }
+
+  @media (max-width: 700px) {
+    margin-block-end: calc(50vw + 13rem);
+    transform: translateY(50vw);
   }
 
   @media (max-width: $mobile-break) {
     margin-inline: 2rem;
   }
+}
+
+section {
+  max-width: 1920px;
+  position: relative;
 }
 
 .back-to-blog {
@@ -113,35 +222,41 @@ article {
   background-color: white;
   padding: 4rem;
 
-  h1 {
-    margin-block-end: 6rem;
+  h3 {
+    margin-block-end: 4rem;
     text-align: center;
   }  
 }
 
 .featured-image {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
   width: 100%;
 }
 
 .image-container {
-  margin-block-start: 6rem;
-  margin-inline: auto;
-  max-width: 1200px;
-
-  @media (max-width: 1296px) {
-    margin-inline: 6rem;
-  }
+  box-sizing: content-box;
+  width: 31.25%;
+  padding-inline-start: calc(3.5rem + var(--padding-global-inline));
+  position: absolute;
+  z-index: 0;
 
   @media (max-width: $tablet-break) {
-    margin-block-start: 0;
-    margin-inline: 0;
+    width: 50%;
+    transform: translateX(calc(50vw - 50%));
+    padding-inline-start: 0;
+  }
+
+  @media (max-width: 700px) {
+    margin-block-start: -4rem;
+    width: 100%;
   }
 }
 
 .share-buttons {
   position: absolute;
-  right: -5rem;
-  top: 11rem;
+  left: -3.5rem;
+  top: 18.5rem;
 
   & > * {
     display: block;
@@ -156,8 +271,8 @@ article {
   }
 
   @media (max-width: $mobile-break) {
-    right: 2rem;
-    top: 2rem;
+    left: 2.2rem;
+    top: 2.2rem;
 
     & > * {
       display: inline-block;
