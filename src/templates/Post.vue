@@ -35,10 +35,6 @@
       description
       date (format: "DD.MM.YYYY")
       content
-      gallery_images {
-        src
-        alt
-      }
       featured_image {
         src
         alt
