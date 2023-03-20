@@ -7,7 +7,7 @@
           <h3>{{ loadedPosts[0].node.title }}</h3>
           <hr>
           <p>{{ loadedPosts[0].node.excerpt }}</p>
-          <g-link :to="link" class="read-more">weiterlesen ></g-link>
+          <g-link :to="`/beitrag/${loadedPosts[0].node.id}`" class="read-more">weiterlesen ></g-link>
         </div>
         <div>
           <g-image immediate :src="loadedPosts[0].node.featured_image.src" :alt="loadedPosts[0].node.featured_image.alt"></g-image>
@@ -94,7 +94,7 @@ export default {
       if (this.currentPage + 1 > this.$page.posts.pageInfo.totalPages) {
         $state.complete();
       } else {
-        const { data } = await this.$fetch(`/beitrag/${this.currentPage + 1}`)
+        const { data } = await this.$fetch(`/blog/${this.currentPage + 1}`)
         if (data.posts.edges.length) {
           this.currentPage = data.posts.pageInfo.currentPage;
           this.loadedPosts.push(...data.posts.edges);
