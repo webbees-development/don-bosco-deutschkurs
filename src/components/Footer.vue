@@ -103,6 +103,9 @@ h4 {
   font-weight: bold;
   line-height: 1.4;
 }
+nav li {
+  cursor: pointer;
+}
 nav ul {
   height: 100%;
   display: flex;
