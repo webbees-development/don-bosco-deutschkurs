@@ -19,9 +19,9 @@
       <nav v-if="$route.path === '/'">
         <ul aria-label="Primary" role="list" class="nav-list">
           <li @click="scrollToTop">Startseite</li>
-          <li><a to="#about-us">Über uns</a></li>
-          <li><a to="#blog">Blog</a></li>
-          <li><a to="#photos">Fotos</a></li>
+          <li><a href="#about-us">Über uns</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#photos">Fotos</a></li>
         </ul>
       </nav>
 
