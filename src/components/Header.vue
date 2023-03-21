@@ -77,11 +77,17 @@ export default {
   data() {
     return {
       flags: [],
+      flag_interval: undefined,
     };
   },
   mounted() {
     this.initSectionObserver();
+    clearInterval(this.flag_interval);
     this.changeFlag();
+  },
+  unmounted() {
+    clearInterval(this.flag_interval);
+    this.flag_interval = undefined;
   },
   created() {
     this.flags.push(...this.$static.allFlag.edges);
@@ -127,22 +133,24 @@ export default {
         });
     },
     changeFlag() {
-      //change image with timer
-      const images = document.getElementsByClassName("flag");
-      let i = 0;
-      images[i].dataset.visible = "true";
-
-      function changeFlag() {
-        images[i].dataset.visible = "false";
-        if (i < images.length - 1) {
-          i += 1
-        } else {
-          i = 0
-        }
+      // change image with timer
+      if (this.flag_interval === undefined) {
+        const images = document.getElementsByClassName("flag");
+        let i = 0;
         images[i].dataset.visible = "true";
-      }
 
-      setInterval(changeFlag, 4000);
+        function changeFlag() {
+          images[i].dataset.visible = "false";
+          if (i < images.length - 1) {
+            i += 1
+          } else {
+            i = 0
+          }
+          images[i].dataset.visible = "true";
+        }
+
+        this.flag_interval = setInterval(changeFlag, 4000);
+      }
     },
   },
 };
