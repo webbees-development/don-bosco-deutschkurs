@@ -12,8 +12,13 @@
 @import "~/assets/styles/global.scss";
 .ending {
   text-align: center;
-  padding-block: clamp(3rem, 7.5vw, 9rem);
-  padding-inline: var(--padding-global-inline);
+  // padding-block: clamp(3rem, 7.5vw, 9rem);
+  padding-top: clamp(3rem, 7.5vw, 9rem);
+  padding-bottom: clamp(3rem, 7.5vw, 9rem);
+  // padding-inline: var(--padding-global-inline);
+  padding-left: var(--padding-global-inline);
+  padding-right: var(--padding-global-inline);
+
   h2 {
     font-size: min(2.6vw, var(--fs-600));
     br:last-of-type {

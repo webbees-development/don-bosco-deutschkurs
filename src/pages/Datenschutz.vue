@@ -146,7 +146,8 @@ export default {
 
 <style lang="scss" scoped>
 h1 {
-  margin-block-start: 6rem;
+  // margin-block-start: 6rem;
+  margin-top: 6rem;
   text-align: center;
 }
 
@@ -158,7 +159,8 @@ p + p,
 p + h3,
 p + ul,
 ul + p {
-  margin-block-start: 1em;
+  // margin-block-start: 1em;
+  margin-top: 1em;
 }
 
 ul {
@@ -180,15 +182,21 @@ ul {
 
 .card {
   background-image: url("../assets/images/index/hintergrund.png");
-  margin-block-end: 8rem;
-  margin-block-start: 4rem;
-  margin-inline: auto;
+  // margin-block-end: 8rem;
+  margin-bottom: 8rem;
+  // margin-block-start: 4rem;
+  margin-top: 4rem;
+  // margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1100px;
   padding: 3rem 3rem;
   text-align: center;
 
   @media (max-width: 1164px) {
-    margin-inline: 2rem;
+    // margin-inline: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 

@@ -42,7 +42,9 @@ a{
   align-items: center;
   padding: 9rem min(16vw, 19.5rem);
   @media (max-width: $first-break) {
-    padding-inline: var(--padding-global-inline);
+    // padding-inline: var(--padding-global-inline);
+    padding-left: var(--padding-global-inline);
+    padding-right: var(--padding-global-inline);
   }
 }
 .about-us div {
@@ -51,15 +53,21 @@ a{
   padding: 5.5rem 7.75rem;
   h2 {
     max-width: 30ch;
-    margin-inline: auto;
+    // margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media (max-width: $tablet-break) {
     padding: 8vw 8vw;
   }
 }
 .about-us p {
-  margin-block: 2.8rem 2rem;
+  // margin-block: 2.8rem 2rem;
+  margin-top: 2.8rem 2rem;
+  margin-bottom: 2.8rem 2rem;
   max-width: 70ch;
-  margin-inline: auto;
+  // margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

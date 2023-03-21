@@ -62,8 +62,12 @@ figure {
   max-width: 40rem;
   min-width: 0;
 }
+
 figure:nth-child(2) {
-  padding-inline: 4rem;
+  // padding-inline: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  
   img {
     object-position: 0 10%;
   }
@@ -74,13 +78,18 @@ figure:nth-child(3) {
   }
 }
 figcaption {
-  margin-block-start: 2rem;
+  // margin-block-start: 2rem;
+  margin-top: 2rem;
 }
 figcaption p {
   max-width: 28ch;
   line-height: 1.6;
-  margin-inline: auto;
-  padding-block-start: 0.75rem;
+  // margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-block-start: 0.75rem;
+  padding-top: 0.75rem;
+
   br {
     display: none;
   }
@@ -93,17 +102,26 @@ a {
 }
 .participate {
   text-align: center;
-  padding-inline: 11.25rem;
-  padding-block: 9rem;
+  // padding-inline: 11.25rem;
+  padding-left: 11.25rem;
+  padding-right: 11.25rem;
+  // padding-block: 9rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+
   @media (max-width: $first-break) {
-    padding-inline: var(--padding-global-inline);
+    // padding-inline: var(--padding-global-inline);
+    padding-left: var(--padding-global-inline);
+    padding-right: var(--padding-global-inline);
   }
 }
 .participate-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-block: 2.5rem 5rem;
+  // padding-block: 2.5rem 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
 }
 .image-container {
   background-image: url("../assets/images/index/rahmen2.png");
@@ -121,10 +139,14 @@ a {
   .participate-container {
     flex-direction: column;
     align-items: center;
-    padding-block: 4rem 5rem;
+    // padding-block: 4rem 5rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
     a {
       white-space: normal;
     }
+
     figure {
       display: flex;
       align-items: center;
@@ -133,33 +155,43 @@ a {
       width: 100%;
       min-width: 0;
     }
+
     figure:nth-child(2) {
-      padding-inline: 0;
+      // padding-inline: 0;
+      padding-left: 0;
+      padding-right: 0;
       flex-direction: row-reverse;
-      padding-block: 9vw;
+      // padding-block: 9vw;
+      padding-top: 9vw;
+      padding-bottom: 9vw;
     }
+
     figcaption p {
       br {
         display: none;
       }
     }
+    
     /* flex play */
     @media (min-width: 626px) {
       figure:nth-child(odd) {
         justify-content: left;
         .image-container {
-          margin-inline-end: 5vw;
+          // margin-inline-end: 5vw;
+          margin-right: 5vw;
         }
       }
       figure:nth-child(even) {
         justify-content: right;
         .image-container {
-          margin-inline-start: 5vw;
+          // margin-inline-start: 5vw;
+          margin-left: 5vw;
         }
       }
     }
     figcaption {
-      margin-block-start: 1rem;
+      // margin-block-start: 1rem;
+      margin-top: 1rem;
     }
     figcaption h3 {
       flex-shrink: 1;
@@ -187,15 +219,19 @@ a {
     figure {
       text-align: center;
       flex-direction: column;
+
       & > * {
-        margin-inline: 0;
+        // margin-inline: 0;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
     figure:nth-child(2) {
       flex-direction: column;
     }
     .image-container {
-      margin-block-end: 2rem;
+      // margin-block-end: 2rem;
+      margin-bottom: 2rem;
       width: 30rem;
       max-width: 50rem;
     }

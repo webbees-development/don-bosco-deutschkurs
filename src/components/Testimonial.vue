@@ -69,8 +69,11 @@ p {
 h2 {
   font-family: "Nothing You Could Do", "sans-serif";
   max-width: 38ch;
-  margin-inline: auto;
-  padding-block-end: 2.6rem;
+  // margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-block-end: 2.6rem;
+  padding-bottom: 2.6rem;
 }
 p {
   font-size: var(--fs-400);
@@ -82,8 +85,13 @@ p {
   }
   div {
     position: relative;
-    padding-inline: var(--padding-global-inline);
-    padding-block: 10rem;
+    // padding-inline: var(--padding-global-inline);
+    padding-left: var(--padding-global-inline);
+    padding-right: var(--padding-global-inline);
+    // padding-block: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
     h2 {
       font-size: 3.2em;
       line-height: 1.4;
@@ -92,7 +100,9 @@ p {
 }
 @media (max-width: 800px) {
   div {
-    padding-block: 7rem;
+    // padding-block: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
     h2 {
       font-size: 2.8em;
       line-height: 1.4;

@@ -192,15 +192,18 @@ export default {
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-block-start: 5rem;
+  // padding-block-start: 5rem;
+  padding-top: 5rem;
 
   div:first-of-type {
+    // padding-inline-end: 8.5rem;
     padding-right: 8.5rem;
   }
 
   h3 {
     display: -webkit-box;
-    margin-block-start: 1em;
+    // margin-block-start: 1em;
+    margin-top: 1em;
     overflow: hidden;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
@@ -211,8 +214,10 @@ export default {
     border-color: var(--clr-primary);
     border-style: solid;
     border-width: 2.5px;
-    margin-block-start: 0.5rem;
-    margin-block-end: 2rem;
+    // margin-block-start: 0.5rem;
+    margin-top: 0.5rem;
+    // margin-block-end: 2rem;
+    margin-bottom: 2rem;
     width: 100px;
   }
 
@@ -240,7 +245,8 @@ export default {
   .read-more {
     display: block;
     color: var(--clr-primary);
-    margin-block-start: 2rem;
+    // margin-block-start: 2rem;
+    margin-top: 2rem;
 
     &:hover {
       text-decoration: underline;
@@ -269,15 +275,20 @@ export default {
     }
 
     h3 {
-      margin-block-start: 4rem;
+      // margin-block-start: 4rem;
+      margin-top: 4rem;
     }
 
     hr {
-      margin-inline: auto;
+      // margin-inline: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     p {
-      margin-inline: auto;
+      // margin-inline: auto;
+      margin-left: auto;
+      margin-right: auto;
       max-width: 60ch;
     }
   }
@@ -297,10 +308,14 @@ export default {
 
 .featured-post-section {
   background-image: url("../assets/images/index/hintergrund.png");
-  padding-block-start: 6rem;
-  padding-block-end: 9rem;
+  // padding-block-start: 6rem;
+  padding-top: 6rem;
+  // padding-block-end: 9rem;
+  padding-bottom: 9rem;
   position: relative;
-  padding-inline: var(--padding-global-inline);
+  // padding-inline: var(--padding-global-inline);
+  padding-left: var(--padding-global-inline);
+  padding-right: var(--padding-global-inline);
 
   h1 {
     text-align: center;
@@ -322,7 +337,11 @@ export default {
 }
 
 .post-previews {
-  padding-block: 9rem;
-  padding-inline: var(--padding-global-inline);
+  // padding-block: 9rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  // padding-inline: var(--padding-global-inline);
+  padding-left: var(--padding-global-inline);
+  padding-right: var(--padding-global-inline);
 }
 </style>

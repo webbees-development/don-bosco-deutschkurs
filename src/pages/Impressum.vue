@@ -156,7 +156,8 @@ export default {
 
 // Remove this, just temporary for release
 h1{
-  padding-block-end: 3rem;
+  // padding-block-end: 3rem;
+  padding-bottom: 3rem;
 }
 
 h2,h3{
@@ -178,7 +179,9 @@ a {
 }
 
 .impressum{
-  padding-block: 9rem;
+  // padding-block: 9rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 h1 {
@@ -188,22 +191,34 @@ h1 {
 }
 h2 {
   // margin-block-end: 1em;
+  // margin-bottom: 1em;
   // margin-block-start: 2em;
+  // margin-top: 2em;
 }
 
 section {
   text-align: center;
-  margin-block-end: 6rem;
-  padding-inline: var(--padding-global-inline);;
+  // margin-block-end: 6rem;
+  margin-bottom: 6rem;
+  // padding-inline: var(--padding-global-inline);
+  padding-left: var(--padding-global-inline);
+  padding-right: var(--padding-global-inline);
+
   & > h3 {
-    margin-block-start: 2em;
+    // margin-block-start: 2em;
+    margin-top: 2em;
   }
+
   & > p {
-    margin-inline: auto;
+    // margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 65ch;
   }
+
   & > p + p {
-    margin-block-start: 1em;
+    // margin-block-start: 1em;
+    margin-top: 1em;
   }
 }
 .grid {
@@ -214,13 +229,17 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-inline-end: var(--column-spacing);
+    // padding-inline-end: var(--column-spacing);
+    padding-right: var(--column-spacing);
     text-align: right;
   }
   & > *:last-child {
     border-left: solid 2px black;
-    padding-block: 1rem;
-    padding-inline-start: var(--column-spacing);
+    // padding-block: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    // padding-inline-start: var(--column-spacing);
+    padding-left: var(--column-spacing);
     text-align: left;
   }
   @media (max-width: $mobile-break) {
@@ -228,13 +247,16 @@ section {
   }
   @media (max-width: 450px) {
     grid-template-columns: 1fr;
+
     & > *:first-child {
-      padding-inline-start: var(--column-spacing);
+      // padding-inline-start: var(--column-spacing);
+      padding-left: var(--column-spacing);
       text-align: left;
     }
   }
 }
 .grid + .grid {
-  margin-block-start: 2rem;
+  // margin-block-start: 2rem;
+  margin-top: 2rem;
 }
 </style>

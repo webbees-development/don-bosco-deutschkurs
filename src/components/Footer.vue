@@ -93,9 +93,12 @@ footer {
   color: var(--clr-primary);
   font-family: var(--ff-primary);
   background-image: url("../assets/images/index/hintergrund.png");
-  padding-block: 4.5rem 1rem;
+  // padding-block: 4.5rem 1rem;
+  padding-top: 4.5rem;
+  padding-bottom: 1rem;
 }
 h3 {
+  // margin-block-end: 1.5rem;
   margin-bottom: 1.5rem;
 }
 h4 {
@@ -139,12 +142,16 @@ nav {
 .footer_content_1,
 .footer_content_2,
 .footer_content_3 {
-  padding-inline: var(--padding-global-inline);
+  // padding-inline: var(--padding-global-inline);
+  padding-left: var(--padding-global-inline);
+  padding-right: var(--padding-global-inline);
 }
 .footer_content_2 {
   display: flex;
   justify-content: space-between;
-  padding-block: 2.5rem 7rem;
+  // padding-block: 2.5rem 7rem;
+  padding-top: 2.5rem;
+  padding-bottom: 7rem;
   white-space: nowrap;
   @media (max-width: 960px) {
     nav {
@@ -156,8 +163,11 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-block-end: 0.4rem;
+    // padding-block-end: 0.4rem;
+    padding-bottom: 0.4rem;
+
     h3 {
+      // margin-block-end: 0;
       margin-bottom: 0;
     }
     .btn {
@@ -169,35 +179,46 @@ nav {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--clr-primary);
-  padding-block-start: 1rem;
+  // padding-block-start: 1rem;
+  padding-top: 1rem;
+
   p {
     font-size: var(--fs-200);
   }
   @media (max-width: 500px) {
     flex-direction: column-reverse;
     text-align: center;
+
     p:first-child {
-      padding-block-start: 0.4rem;
+      // padding-block-start: 0.4rem;
+      padding-top: 0.4rem;
     }
   }
 }
 .logo {
   display: block;
   max-width: 9.5rem;
+
   @media (max-width: 850px) {
-    margin-inline: auto;
+    // margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   @media (max-width: 850px) {
-    padding-block: 4rem;
+    // padding-block: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 .social-media {
-  padding-block-start: 0.6rem;
+  // padding-block-start: 0.6rem;
+  padding-top: 0.6rem;
 }
 .facebook,
 .instagram {
@@ -208,6 +229,7 @@ nav {
 }
 .facebook {
   background-image: url("../assets/images/icon/facebook.svg");
+  // padding-inline-end: 2.5rem;
   padding-right: 2.5rem;
 }
 .instagram {

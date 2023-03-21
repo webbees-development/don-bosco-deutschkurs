@@ -32,12 +32,17 @@ query {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-block: 3.75rem;
+  // padding-block: 3.75rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
 }
 .content {
-  padding-inline-end: min(10.5vw, 12.5rem);
+  // padding-inline-end: min(10.5vw, 12.5rem);
+  padding-right: min(10.5vw, 12.5rem);
+
   @media (max-width: $first-break) {
-    padding-inline-end: 8vw;
+    // padding-inline-end: 8vw;
+    padding-right: 8vw;
   }
 }
 h2 {
@@ -45,10 +50,13 @@ h2 {
 }
 p,
 a {
-  margin-inline-start: 2.5rem;
+  // margin-inline-start: 2.5rem;
+  margin-left: 2.5rem;
 }
 p {
-  margin-block: 3.25rem 2.5rem;
+  // margin-block: 3.25rem 2.5rem;
+  margin-top: 3.25rem;
+  margin-bottom: 2.5rem;
   max-width: 28ch;
 }
 .image {
@@ -73,25 +81,34 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-block: 7rem;
-    padding-inline: var(--padding-global-inline);
+    // padding-block: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    // padding-inline: var(--padding-global-inline);
+    padding-left: var(--padding-global-inline);
+    padding-right: var(--padding-global-inline);
   }
   .content {
     padding: 0;
   }
   h2 {
     max-width: 20ch;
-    margin-inline: auto;
+    // margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
     br {
       display: none;
     }
   }
   p,
   a {
-    margin-inline-start: 0;
+    // margin-inline-start: 0;
+    margin-left: 0;
   }
   p {
-    margin-block: 2.8rem 2rem;
+    // margin-block: 2.8rem 2rem;
+    margin-top: 2.8rem;
+    margin-bottom: 2rem;
     max-width: 40ch;
   }
   .image {

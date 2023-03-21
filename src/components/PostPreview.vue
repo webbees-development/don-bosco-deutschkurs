@@ -45,7 +45,8 @@ export default {
 
 h3 {
   display: -webkit-box;
-  margin-block-start: 2rem;
+  // margin-block-start: 2rem;
+  margin-top: 2rem;
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
@@ -58,7 +59,9 @@ h3 {
 
 figcaption {
   max-width: min(80%, 50ch);
-  margin-inline: auto;
+  // margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: 1500px) {
     max-width: min(80%, 60ch);
@@ -70,8 +73,10 @@ figcaption {
 
 p.excerpt {
   display: -webkit-box;
-  margin-block-start: 0.5rem;
-  margin-block-end: 1rem;
+  // margin-block-start: 0.5rem;
+  margin-top: 0.5rem;
+  // margin-block-end: 1rem;
+  margin-bottom: 1rem;
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;

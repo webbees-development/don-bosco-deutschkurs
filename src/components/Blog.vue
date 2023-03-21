@@ -50,14 +50,19 @@ export default{
 @import "~/assets/styles/global.scss";
 
 h2 {
-  padding-block-end: 3.125rem;
+  // padding-block-end: 3.125rem;
+  padding-bottom: 3.125rem;
 }
 .blog { 
   text-align: center;
 
   background-image: url("../assets/images/index/hintergrund.png");
-  padding-block: 9rem;
-  padding-inline: min(11vw, 15rem);
+  // padding-block: 9rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  // padding-inline: min(11vw, 15rem);
+  padding-left: min(11vw, 15rem);
+  padding-right: min(11vw, 15rem);
   // padding-inline: min(9vw, 11rem);
 
   --carousel-btn-spacing: -5.5rem;
@@ -74,7 +79,8 @@ h2 {
   }
 
 }
-.btn{
-  margin-block-start: 5rem;
+.btn {
+  // margin-block-start: 5rem;
+  margin-top: 5rem;
 }
 </style>

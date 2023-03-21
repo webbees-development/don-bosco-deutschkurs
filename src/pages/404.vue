@@ -116,10 +116,13 @@ section{
   align-items: center;
 }
 p{
-padding-block: 2rem
+  // padding-block: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .btn {
-  margin-block-start: 2em;
+  // margin-block-start: 2em;
+  margin-top: 2em;
 }
 </style>

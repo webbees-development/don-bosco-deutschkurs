@@ -166,11 +166,17 @@ export default {
 @import "~/assets/styles/global.scss";
 .photos {
   text-align: center;
-  padding-inline: var(--padding-global-inline);
-  padding-block: 4rem 2em;
+  // padding-inline: var(--padding-global-inline);
+  padding-left: var(--padding-global-inline);
+  padding-right: var(--padding-global-inline);
+  // padding-block: 4rem 2em;
+  padding-top: 4rem;
+  padding-bottom: 2em;
+
   br {
     display: none;
   }
+
   @media (max-width: 474px) {
     br {
       display: block;
@@ -178,12 +184,19 @@ export default {
   }
 }
 .photos-container {
-  padding-block: 4rem 6rem;
+  // padding-block: 4rem 6rem;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+
   @media (max-width: 720px) {
-    padding-block: 2rem 3rem;
+    // padding-block: 2rem 3rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
   }
   @media (max-width: 488px) {
-    padding-block: 3rem 3rem;
+    // padding-block: 3rem 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 .photo-card {
@@ -192,6 +205,7 @@ export default {
   background-size: 100%;
   width: 25rem;
   max-width: 100%;
+
   @media (max-width: 1079px) {
     width: 20rem;
   }
@@ -211,6 +225,7 @@ export default {
   padding: 6.5% 4.1% 13% 4.5%; 
   width: 100%;
 }
+
 figure {
   position: relative;
   display: inline-block;

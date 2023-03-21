@@ -115,37 +115,50 @@ export default {
 @import "~/assets/styles/global.scss";
 
 h1 {
-  margin-block-end: 1em;
+  // margin-block-end: 1em;
+  margin-bottom: 1em;
 }
 
 hr {
   border-color: var(--clr-primary);
   border-style: solid;
   border-width: 2.5px;
-  margin-block-start: 3rem;
-  margin-block-end: 3rem;
-  margin-inline: auto;
+  // margin-block-start: 3rem;
+  margin-top: 3rem;
+  // margin-block-end: 3rem;
+  margin-bottom: 3rem;
+  // margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 100px;
 }
 
 p + p {
-  margin-block-start: 1em;
+  // margin-block-start: 1em;
+  margin-top: 1em;
 }
 
 .bank p + p {
-  margin-block-start: 0.25em;
+  // margin-block-start: 0.25em;
+  margin-top: 0.25em;
 }
 
 .donation {
   background-image: url("../assets/images/index/hintergrund.png");
-  margin-block: 6rem 9rem;
-  margin-inline: auto;
+  // margin-block: 6rem 9rem;
+  margin-top: 6rem;
+  margin-bottom: 9rem;
+  // margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 800px;
   padding: 5rem 3.5rem; 
   text-align: center;
 
   @media (max-width: 864px) {
-    margin-inline: 2rem;
+    // margin-inline: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 </style>
