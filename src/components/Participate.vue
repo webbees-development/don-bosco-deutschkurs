@@ -7,9 +7,7 @@
     <div class="participate-container">
       <figure>
         <div class="image-container">
-          <g-image
-            src="../assets/images/image-gallery/mithelfen-img1.jpg"
-          />
+          <g-image src="../assets/images/index/mithelfen-img1.jpg"/>
         </div>
         <figcaption>
           <h3>1. Probetermin vereinbaren</h3>
@@ -24,9 +22,7 @@
       </figure>
       <figure>
         <div class="image-container">
-          <g-image
-            src="../assets/images/image-gallery/mithelfen-img2.jpg"
-          />
+          <g-image src="../assets/images/index/mithelfen-img2.jpg"/>
         </div>
         <figcaption>
           <h3>2. Sei bei einem Kurs dabei</h3>
@@ -38,9 +34,7 @@
       </figure>
       <figure>
         <div class="image-container">
-          <g-image
-            src="../assets/images/image-gallery/mithelfen-img3.jpg"
-          />
+          <g-image src="../assets/images/index/mithelfen-img3.jpg"/>
         </div>
         <figcaption>
           <h3>3. Erlebe die Freude vor Ort</h3>
