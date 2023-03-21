@@ -41,25 +41,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/styles/global.scss";
+
 h3 {
   display: -webkit-box;
-  height: 2.8em;
   margin-block-start: 2rem;
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
   word-wrap: break-word;
+
+  @media (min-width: $mobile-break) {
+    height: 2.8em;
+  }
 }
 
-figcaption{
-  max-width: 50ch;
+figcaption {
+  max-width: min(80%, 50ch);
   margin-inline: auto;
 
   @media (max-width: 1500px) {
-    max-width: 60ch;
+    max-width: min(80%, 60ch);
   }
   @media (max-width: 800px) {
-  max-width: 90ch;
+    max-width: min(80%, 90ch);
   }
 }
 
@@ -76,7 +81,7 @@ p {
 .post-image {
   aspect-ratio: 1.4;
   background-image: url("../assets/images/index/hintergrund.png");
-  border: 22px solid transparent;
+  border: 1.5rem solid transparent;
   object-fit: cover;
   transition: transform 1000ms ease;
   width: 100%;
