@@ -321,6 +321,8 @@ section {
 }
 </style>
 
+<!-- styles for content -->
+<!-- add styles for other markdown elements -->
 <style lang="scss">
 .article-content {
   & > * + * {
