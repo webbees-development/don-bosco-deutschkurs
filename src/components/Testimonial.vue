@@ -14,7 +14,7 @@
     </div>
     <g-image
       style="visibility: hidden"
-      src="../assets/images/index/zitat.png"
+      src="../assets/images/index/zitat.webp"
       alt="Bild von einer Frau, die ihre Arme in die Höhe streckt"
     />
   </section>
@@ -24,7 +24,7 @@
 @import "~/assets/styles/global.scss";
 .testimonial {
   position: relative;
-  background-image: url("../assets/images/index/zitat.png");
+  background-image: url("../assets/images/index/zitat.webp");
   background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-repeat: no-repeat;
