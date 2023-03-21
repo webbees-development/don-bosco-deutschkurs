@@ -9,9 +9,7 @@
         Nimm dir 2 Stunden Zeit, teile deine Sprache Deutsch und bereichere damit
         (d)ein Leben.
       </p>
-      <g-link class="btn" :to="$static.metadata.calendly_url"
-        >Probetermin vereinbaren</g-link
-      >
+      <g-link class="btn" :to="$static.metadata.calendly_url">Probetermin vereinbaren</g-link>
     </div>
     <div class="image">
       <g-image src="../assets/images/index/haende.jpg" alt="Menschen reichen sich ihre Hände im Kreis und zwei Hände formen in der Mitte des Kreises ein Herz" />
