@@ -8,43 +8,43 @@
     <div class="image-grid">
       <div class="image">
         <g-image
-          src="../assets/images/image-gallery/photos-1.jpg"
+          src="../assets/images/index/photos-1.jpg"
           alt=""
         ></g-image>
       </div>
       <div class="image">
         <g-image
-          src="../assets/images/image-gallery/photos-2.png"
+          src="../assets/images/index/photos-2.png"
           alt=""
         ></g-image>
       </div>
       <div class="image">
         <g-image
-          src="../assets/images/image-gallery/photos-4.jpg"
+          src="../assets/images/index/photos-4.jpg"
           alt=""
         ></g-image>
       </div>
       <div class="image">
         <g-image
-          src="../assets/images/image-gallery/photos-9.jpg"
+          src="../assets/images/index/photos-9.jpg"
           alt=""
         ></g-image>
       </div>
       <div class="image">
         <g-image
-          src="../assets/images/image-gallery/photos-3.jpg"
+          src="../assets/images/index/photos-3.jpg"
           alt=""
         ></g-image>
       </div>
       <div class="image">
         <g-image
-          src="../assets/images/image-gallery/photos-8.jpg"
+          src="../assets/images/index/photos-8.jpg"
           alt=""
         ></g-image>
       </div>
       <div class="image">
         <g-image
-          src="../assets/images/image-gallery/photos-5.jpg"
+          src="../assets/images/index/photos-5.jpg"
           alt=""
         ></g-image>
       </div>
