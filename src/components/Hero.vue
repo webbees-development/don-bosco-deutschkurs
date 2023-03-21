@@ -20,9 +20,7 @@
         Komm zu einem unserer Deutschkurse <br />für Flüchtlinge aus
         verschiedenen Ländern.
       </p>
-      <g-link class="btn" :to="$static.metadata.calendly_url"
-        >Probetermin vereinbaren</g-link
-      >
+      <a class="btn" :href="$static.metadata.calendly_url">Probetermin vereinbaren</a>
     </div>
     <div class="background-languages">
       <span class="welcome">

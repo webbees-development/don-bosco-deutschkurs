@@ -13,9 +13,7 @@
           <h3>1. Probetermin vereinbaren</h3>
           <p>
             Klicke auf den Button
-            <g-link :to="$static.metadata.calendly_url"
-              >„Probetermin vereinbaren“</g-link
-            >
+            <a :href="$static.metadata.calendly_url">„Probetermin vereinbaren“</a>
             und such’ dir einen Abend aus, an dem du dir 2 Stunden Zeit nimmst.
           </p>
         </figcaption>
@@ -46,9 +44,7 @@
         </figcaption>
       </figure>
     </div>
-    <g-link class="btn" :to="$static.metadata.calendly_url"
-      >Probetermin vereinbaren</g-link
-    >
+    <a class="btn" :href="$static.metadata.calendly_url">Probetermin vereinbaren</a>
   </section>
 </template>
 
