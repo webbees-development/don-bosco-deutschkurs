@@ -1,8 +1,8 @@
 <template>
   <footer>
     <div class="footer_content_1">
-      <g-link class="logo" href="#"
-        ><g-image src="../assets/images/logo/logo.png" alt="Don Bosco Logo" />
+      <g-link class="logo" href="#">
+        <g-image src="../assets/images/logo/logo.png" alt="Don Bosco Logo" />
       </g-link>
     </div>
     <div class="footer_content_2">
@@ -11,17 +11,17 @@
           Wir helfen Flüchtlingen in Wien, um <br />Perspektiven zu eröffnen.
           Sei’ auch dabei.
         </h3>
-        <g-link class="btn" :to="$static.metadata.calendly_url">
+        <a class="btn" :href="$static.metadata.calendly_url">
           Probetermin vereinbaren
-        </g-link>
+        </a>
       </div>
 
       <nav v-if="$route.path === '/'">
         <ul aria-label="Primary" role="list" class="nav-list">
           <li @click="scrollToTop">Startseite</li>
-          <li><g-link to="/#about-us">Über uns</g-link></li>
-          <li><g-link to="/#blog">Blog</g-link></li>
-          <li><g-link to="/#photos">Fotos</g-link></li>
+          <li><a to="#about-us">Über uns</a></li>
+          <li><a to="#blog">Blog</a></li>
+          <li><a to="#photos">Fotos</a></li>
         </ul>
       </nav>
 
@@ -32,23 +32,25 @@
           <p>1030 Wien</p>
           <p>
             Mail:
-            <g-link href="mailto:donbosco.deutschkurs@gmail.com">
+            <a href="mailto:donbosco.deutschkurs@gmail.com">
               donbosco.deutschkurs@gmail.com
-            </g-link>
+            </a>
           </p>
         </div>
 
         <div class="social-media">
-          <g-link
+          <a
             class="facebook"
             href="https://www.facebook.com/donbosco.fuerfluechtlinge"
-          ><span class="sr-only">Facebook Seite von Don Bosco für Flüchtlinge</span>
-          </g-link>
-          <g-link
+          >
+            <span class="sr-only">Facebook Seite von Don Bosco für Flüchtlinge</span>
+          </a>
+          <a
             class="instagram"
             href="https://www.instagram.com/donbosco4refugees/"
-          ><span class="sr-only">Instagram Seite von Don Bosco für Flüchtlinge</span>
-          </g-link>
+          >
+            <span class="sr-only">Instagram Seite von Don Bosco für Flüchtlinge</span>
+          </a>
         </div>
       </div>
     </div>
