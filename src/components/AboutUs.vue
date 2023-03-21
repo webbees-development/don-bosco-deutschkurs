@@ -41,6 +41,7 @@ a{
   flex-direction: column;
   align-items: center;
   padding: 9rem min(16vw, 19.5rem);
+
   @media (max-width: $first-break) {
     // padding-inline: var(--padding-global-inline);
     padding-left: var(--padding-global-inline);
@@ -49,7 +50,8 @@ a{
 }
 .about-us div {
   text-align: center;
-  background-image: url("../assets/images/index/hintergrund.png");
+  background-image: url("../assets/images/index/hintergrund.webp");
+  background-repeat: repeat;
   padding: 5.5rem 7.75rem;
 
   h2 {

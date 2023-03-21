@@ -154,7 +154,7 @@ a {
   max-width: 34ch;
 }
 .hero {
-  background-image: url("../assets/images/index/hintergrund.png");
+  background-image: url("../assets/images/index/hintergrund.webp");
   display: flex;
   // padding-block: 6rem;
   padding-top: 6rem;

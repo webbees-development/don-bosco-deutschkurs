@@ -85,7 +85,7 @@ p.excerpt {
 
 .post-image {
   aspect-ratio: 1.4;
-  background-image: url("../assets/images/index/hintergrund.png");
+  background-image: url("../assets/images/index/hintergrund.webp");
   border: 1.5rem solid transparent;
   object-fit: cover;
   transition: transform 1000ms ease;

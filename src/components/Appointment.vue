@@ -28,7 +28,7 @@ query {
 <style lang="scss" scoped>
 @import "~/assets/styles/global.scss";
 .appointment {
-  background-image: url("../assets/images/index/hintergrund.png");
+  background-image: url("../assets/images/index/hintergrund.webp");
   display: flex;
   justify-content: flex-end;
   align-items: center;
