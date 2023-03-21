@@ -355,6 +355,10 @@ section {
     list-style-type: decimal;
   }
 
+  strong {
+    font-weight: 600;
+  }
+
   ul {
     list-style-type: disc;
   }
