@@ -111,7 +111,7 @@ export default {
               currentSection = entry.target.getAttribute("id");
             }
           });
-          document.querySelectorAll("nav a").forEach((link) => {
+          document.querySelectorAll("nav#primary-navigation a").forEach((link) => {
             link.classList.remove("active");
             if (link.getAttribute("href").includes(currentSection)) {
               link.classList.add("active");
