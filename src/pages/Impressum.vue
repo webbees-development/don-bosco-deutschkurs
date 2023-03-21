@@ -58,6 +58,9 @@ query {
     siteDescription
     siteUrl
   }
+  customImage(id : "site-logo") {
+    src
+  }
 }
 </static-query>
 
