@@ -6,8 +6,8 @@
         <div>
           <h3>{{ loadedPosts[0].node.title }}</h3>
           <hr>
-          <p>{{ loadedPosts[0].node.excerpt }}</p>
-          <g-link :to="`/beitrag/${loadedPosts[0].node.id}/`" class="read-more">weiterlesen ></g-link>
+          <p class="excerpt">{{ loadedPosts[0].node.excerpt }}</p>
+          <p class="read-more">weiterlesen ></p>
         </div>
         <div>
           <g-image immediate :src="loadedPosts[0].node.featured_image.src" :alt="loadedPosts[0].node.featured_image.alt"></g-image>
@@ -229,7 +229,7 @@ export default {
     }
   }
 
-  p {
+  p.excerpt {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;

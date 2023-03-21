@@ -5,8 +5,8 @@
         <g-image immediate :class="['post-image', white_border ? 'white-border': '']" :src="image.src" :alt="image.alt"></g-image>
         <figcaption>
           <h3>{{ title }}</h3>
-          <p>{{ excerpt }}...</p>
-          <g-link :to="link" class="read-more">weiterlesen ></g-link>
+          <p class="excerpt">{{ excerpt }}...</p>
+          <p class="read-more">weiterlesen ></p>
         </figcaption>
       </figure>
     </g-link>
@@ -68,7 +68,7 @@ figcaption {
   }
 }
 
-p {
+p.excerpt {
   display: -webkit-box;
   margin-block-start: 0.5rem;
   margin-block-end: 1rem;
