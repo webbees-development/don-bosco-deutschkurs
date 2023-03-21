@@ -9,43 +9,43 @@
       <div class="image">
         <g-image
           src="../assets/images/index/photos-1.jpg"
-          alt=""
+          alt="Willkommensposter in verschiedenen Sprachen"
         ></g-image>
       </div>
       <div class="image">
         <g-image
           src="../assets/images/index/photos-2.png"
-          alt=""
+          alt="Jemand bekommt ein Armband angelegt"
         ></g-image>
       </div>
       <div class="image">
         <g-image
           src="../assets/images/index/photos-4.jpg"
-          alt=""
+          alt="Ein Bild vom Deutschkurs wie die Schüler:innen am Tisch sitzen mit ihrer Lehrerin"
         ></g-image>
       </div>
       <div class="image">
         <g-image
           src="../assets/images/index/photos-9.jpg"
-          alt=""
+          alt="Eine Freiwillige schaut einem Lernenden über die Schulter"
         ></g-image>
       </div>
       <div class="image">
         <g-image
           src="../assets/images/index/photos-3.jpg"
-          alt=""
+          alt="Freiwillige posieren auf einer Treppe"
         ></g-image>
       </div>
       <div class="image">
         <g-image
           src="../assets/images/index/photos-8.jpg"
-          alt=""
+          alt="Eine Freiwillige sitzt mit 3 Schülern zusammen auf der Couch"
         ></g-image>
       </div>
       <div class="image">
         <g-image
           src="../assets/images/index/photos-5.jpg"
-          alt=""
+          alt="Gruppenfoto vom Faschingsfest"
         ></g-image>
       </div>
     </div>

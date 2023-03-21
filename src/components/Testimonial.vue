@@ -13,8 +13,9 @@
       </blockquote>
     </div>
     <g-image
-      style="visibility:hidden"
+      style="visibility: hidden"
       src="../assets/images/index/zitat.png"
+      alt="Bild von einer Frau, die ihre Arme in die Höhe streckt"
     />
   </section>
 </template>
