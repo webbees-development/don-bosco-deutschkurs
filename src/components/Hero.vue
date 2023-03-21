@@ -5,10 +5,8 @@
         <g-image src="../assets/images/index/photos-27.jpg" alt="Kursteilnehmer Don Boscos" />
       </div>
       <figcaption>
-        <blockquote>
-          Der Deutschkurs hat mein Leben verändert und mir eine Perspektive
-          eröffnet.
-        </blockquote>
+        <blockquote>Der Deutschkurs hat mein Leben verändert und mir eine Perspektive
+          eröffnet.</blockquote>
         <p class="author">Rami, 2015 vor dem Krieg in Syrien geflüchtet.</p>
       </figcaption>
     </figure>
