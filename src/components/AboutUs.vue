@@ -3,7 +3,7 @@
     <g-image src="../assets/images/index/sprachen.png" alt="Zeichnung von mehreren Menschen verschiedener Herkunft, die Sie auf unterschiedlichen Sprachen begrüßen" />
     <div>
       <h2>
-        Wir helfen Flüchtlingen in Wien, um Perspektiven zu eröffnen. Sei auch
+        Wir helfen Flüchtlingen in Wien, <br class="show-on-small" />um Perspektiven zu eröffnen. <br class="show-on-small" />Sei auch
         dabei!
       </h2>
       <p>
@@ -51,6 +51,7 @@ a{
   text-align: center;
   background-image: url("../assets/images/index/hintergrund.png");
   padding: 5.5rem 7.75rem;
+
   h2 {
     max-width: 30ch;
     // margin-inline: auto;
@@ -63,11 +64,17 @@ a{
 }
 .about-us p {
   // margin-block: 2.8rem 2rem;
-  margin-top: 2.8rem 2rem;
-  margin-bottom: 2.8rem 2rem;
+  margin-top: 2.8rem;
+  margin-bottom: 2rem;
   max-width: 70ch;
   // margin-inline: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 730px) or (max-width: 480px) {
+  .show-on-small {
+    display: none;
+  }
 }
 </style>
