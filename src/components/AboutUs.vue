@@ -8,7 +8,7 @@
       </h2>
       <p>
         „Don Bosco für Flüchtlinge“ wurde im Jahr 2015 als Initiative der
-        <g-link to="https://www.donbosco.at/de/">Salesianer Don Boscos</g-link> gegründet und baut vor allem auf dem Engagement
+        <a href="https://www.donbosco.at/de/">Salesianer Don Boscos</a> gegründet und baut vor allem auf dem Engagement
         von Freiwilligen auf. Die Hauptaktivität sind Intensiv-Deutschkurse.
         Neben dem Spracherwerb, kommen auch Spiele, gegenseitiges Kennenlernen
         und Veranstaltungen wie ein interreligiöses Friedensgebet, Ausflüge und
