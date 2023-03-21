@@ -2,7 +2,7 @@
   <section class="hero" id="hero">
     <figure class="image-container">
       <div class="image">
-        <g-image src="../assets/images/image-gallery/photos-27.jpg" alt="Kursteilnehmer Don Boscos" />
+        <g-image src="../assets/images/index/photos-27.jpg" alt="Kursteilnehmer Don Boscos" />
       </div>
       <figcaption>
         <blockquote>
