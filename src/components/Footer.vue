@@ -57,8 +57,8 @@
     <div class="footer_content_3">
       <p>© <span id="year"></span> Don Boscos für Flüchtlinge</p>
       <p>
-        <g-link to="/impressum">Impressum</g-link> |
-        <g-link to="/datenschutz">Datenschutz</g-link>
+        <g-link to="/impressum/">Impressum</g-link> |
+        <g-link to="/datenschutz/">Datenschutz</g-link>
       </p>
     </div>
   </footer>

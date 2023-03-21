@@ -6,14 +6,14 @@
         v-for="{ node } in $static.posts.edges"
         :key="node.id"
         class="slide generic-slide"
-        :link="`/beitrag/${node.id}`"
+        :link="`/beitrag/${node.id}/`"
         :image="node.featured_image"
         :title="node.title"
         :excerpt="node.excerpt"
         :white_border="true"
       />
     </GenericSlider>
-    <g-link class="btn" to="/blog">zu allen Beiträgen</g-link>
+    <g-link class="btn" to="/blog/">zu allen Beiträgen</g-link>
   </section>
 </template>
 
@@ -58,6 +58,7 @@ h2 {
   background-image: url("../assets/images/index/hintergrund.png");
   padding-block: 9rem;
   padding-inline: min(11vw, 15rem);
+  // padding-inline: min(9vw, 11rem);
 
   --carousel-btn-spacing: -5.5rem;
   --carousel-btn-upper-spacing: 16%;

@@ -7,7 +7,7 @@
           <h3>{{ loadedPosts[0].node.title }}</h3>
           <hr>
           <p>{{ loadedPosts[0].node.excerpt }}</p>
-          <g-link :to="`/beitrag/${loadedPosts[0].node.id}`" class="read-more">weiterlesen ></g-link>
+          <g-link :to="`/beitrag/${loadedPosts[0].node.id}/`" class="read-more">weiterlesen ></g-link>
         </div>
         <div>
           <g-image immediate :src="loadedPosts[0].node.featured_image.src" :alt="loadedPosts[0].node.featured_image.alt"></g-image>
@@ -19,7 +19,7 @@
         <PostPreview
           v-for="{ node } in loadedPosts.slice(1)"
           :key="node.id"
-          :link="`/beitrag/${node.id}`"
+          :link="`/beitrag/${node.id}/`"
           :image="node.featured_image"
           :title="node.title"
           :excerpt="node.excerpt"

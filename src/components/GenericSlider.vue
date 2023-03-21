@@ -8,11 +8,11 @@
     </div>
     <div class="carousel-btn-next hide" ref="next">
       <svg xmlns="http://www.w3.org/2000/svg" width="55.022" height="99.333" viewBox="0 0 55.022 99.333"><path id="ArrowRight" d="M13.807,4.105l2.8-2.923,50.519,49.78L16.2,99.092l-2.671-2.9L61.321,50.963Z" transform="translate(-12.827 -0.47)" stroke-width="1"/>
-</svg>
+      </svg>
     </div>
     <div class="carousel-btn-prev hide" ref="prev">
       <svg xmlns="http://www.w3.org/2000/svg" width="55.022" height="99.333" viewBox="0 0 55.022 99.333">  <path id="ArrowLeft" d="M66.85,4.105l-2.8-2.923L13.529,50.963l50.929,48.13,2.671-2.9L19.336,50.963Z" transform="translate(-12.809 -0.47)" stroke-width="1"/>
-</svg>
+      </svg>
     </div>
   </div>
 </template>
@@ -301,6 +301,7 @@
   
   .wrapper {
     overflow: hidden;
+    // padding: 2rem;
     position: relative;
   }
   
