@@ -8,7 +8,7 @@
         <div class="content">
           <h3>{{ $page.post.title }}</h3>
           <div class="article-content" v-html="$page.post.content"></div>
-          <g-link class="back-to-blog" to="/blog">< zurück zu Beiträgen</g-link>
+          <g-link class="back-to-blog" to="/blog/">← zurück zu Beiträgen</g-link>
         </div>
         <div class="share-buttons">
           <FacebookShareButton :url="$route ? $static.metadata.siteUrl + $route.path : $static.metadata.siteUrl"></FacebookShareButton>
