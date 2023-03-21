@@ -1,9 +1,9 @@
 <template>
   <footer>
     <div class="footer_content_1">
-      <g-link class="logo" href="#">
+      <a class="logo" href="#">
         <g-image src="../assets/images/logo/logo.png" alt="Don Bosco Logo" />
-      </g-link>
+      </a>
     </div>
     <div class="footer_content_2">
       <div>
