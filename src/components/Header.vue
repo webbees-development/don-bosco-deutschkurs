@@ -296,6 +296,7 @@ li + li {
     background-image: url("../assets/images/icon/icon-hamburger.svg");
     background-repeat: no-repeat;
     width: var(--item-width);
+    height: var(--item-width);
     border: none;
     aspect-ratio: 1;
 
