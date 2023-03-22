@@ -15,8 +15,8 @@
     "vue-infinite-loading": "^2.4.5"
   },
   "devDependencies": {
+    "postcss-preset-env": "^6.7.1",
     "sass": "^1.56.1",
     "sass-loader": "^10.3.1"
-    
   }
 }

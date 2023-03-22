@@ -3,6 +3,9 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const postcssPresetEnv = require("postcss-preset-env");
+
+const postcssPlugins = [postcssPresetEnv];
 
 module.exports = {
   icon: {
@@ -59,4 +62,11 @@ module.exports = {
     Post: '/beitrag/:id',
   },
   titleTemplate: '%s | Don Bosco für Flüchtlinge',
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins
+      }
+    }
+  }
 };
