@@ -5,7 +5,7 @@ description: Kurzportrait - Rami
 excerpt: Im Jahr 2015 habe ich am Deutschkurs teilgenommen, dadurch hat sich mein Leben verändert und mir eine Perspektive eröffnet. Durch Don Bosco für Flüchtlinge habe ich meine Fähigkeiten weiterentwickeln können.
 date: 2022-01-01
 featured_image:
-  src: ./images/blog-img3.png
+  src: ./images/blog-4.1.jpeg
   alt: Rami
 published: true
 ---
