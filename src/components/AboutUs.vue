@@ -1,6 +1,6 @@
 <template>
   <section id="about-us" class="about-us">
-    <g-image src="../assets/images/index/sprachen.png" alt="Zeichnung von mehreren Menschen verschiedener Herkunft, die Sie auf unterschiedlichen Sprachen begrüßen" />
+    <g-image src="../assets/images/index/sprachen.jpg" alt="Zeichnung von mehreren Menschen verschiedener Herkunft, die Sie auf unterschiedlichen Sprachen begrüßen" />
     <div>
       <h2>
         Wir helfen Flüchtlingen in Wien, <br class="show-on-small" />um Perspektiven zu eröffnen. <br class="show-on-small" />Sei auch
@@ -21,7 +21,8 @@
 
 <style lang="scss" scoped>
 @import "../assets/styles/global.scss";
-g-image {
+
+img {
   width: max(25vw, 51.6rem);
   @media (max-width: $tablet-break) {
     width: 40rem;
@@ -31,7 +32,7 @@ g-image {
   }
 }
 
-a{
+a {
   color: var(--clr-primary);
   text-decoration: underline;
   text-underline-offset: 0.25rem;
