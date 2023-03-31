@@ -9,7 +9,7 @@
       <div class="photos-container">
         <figure v-for="(photo, index) in loadedPhotos" :key="index">
           <div class="photo-card">
-            <g-image :src="photo.node.src" :alt="photo.node.alt" />
+            <!-- <g-image :src="photo.node.src" :alt="photo.node.alt" /> -->
           </div>
         </figure>
       </div>
