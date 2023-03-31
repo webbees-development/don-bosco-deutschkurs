@@ -9,7 +9,7 @@
       <div class="photos-container">
         <figure v-for="(photo, index) in loadedPhotos" :key="index">
           <div class="photo-card">
-            <!-- <g-image :src="photo.node.src" :alt="photo.node.alt" /> -->
+            <g-image v-if="photo.node.src" :src="photo.node.src" :alt="photo.node.alt" />
           </div>
         </figure>
       </div>
@@ -71,7 +71,7 @@ export default {
       if (this.currentPage + 1 > this.$page.images.pageInfo.totalPages) {
         $state.complete();
       } else {
-        const { data } = await this.$fetch(`/photos/${this.currentPage + 1}`)
+        const { data } = await this.$fetch(`/photos/${this.currentPage + 1}`);
         if (data.images.edges.length) {
           this.currentPage = data.images.pageInfo.currentPage;
           this.loadedPhotos.push(...data.images.edges);
