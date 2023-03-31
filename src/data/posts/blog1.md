@@ -6,19 +6,15 @@ excerpt:
 date: 2022-01-01
 featured_image:
   src: ./images/blog-1.png
-  alt: Blog1
+  alt: Wort-Wolke, die die am häufigst verwendeten Wörter zeigt
 published: true
 ---
 
-Im September 2015 kam eine große Gruppe von Flüchtlingen nach Österreich. Zu dieser Zeit starteten die Salesianer Don Boscos ein neues Projekt mit dem Ziel, Deutschkurse, Beratung und Freizeitaktivitäten für junge Flüchtlinge anzubieten. Um dieses Ziel zu erreichen, war es notwendig, innerhalb kurzer Zeit eine große Anzahl von Freiwilligen zu gewinnen. Die Arbeit in dem Projekt basierte auf der Pädagogik Don Boscos, bei der Freundlichkeit und familiäre Atmosphäre im Zentrum des Projekts standen. Eines der beeindruckendsten Ergebnisse war die langfristige Präsenz beider Gruppen: der Freiwilligen und der Flüchtlinge. 
+Als im September 2015 eine große Flüchtlingswelle nach Österreich kam, starteten die Salesianer Don Boscos gemeinsam mit Ehrenamtlichen ein neues Projekt mit dem Ziel, Deutschkurse, Beratung und Freizeitaktivitäten für junge Flüchtlinge anzubieten. Um dieses Ziel zu erreichen, war es notwendig, innerhalb kurzer Zeit eine große Anzahl von Freiwilligen zu gewinnen, was sehr schnell gelungen ist. Die Arbeit in dem Projekt basiert auf der Pädagogik Don Boscos, bei der Freundlichkeit und familiäre Atmosphäre im Zentrum des Projekts stehen. Eines der schönsten Merkmale des Projekts ist die langfristige Präsenz beider Gruppen: der Freiwilligen und der Geflüchteten.
 
-Dr. Lana Ivanjek  beschäftigte sich mit den wichtigen Forschungsfragen:
-
-1. Welche Faktoren beeinflussen die Motivation der Freiwilligen?
-2. Was motiviert die Flüchtlinge zu regelmäßiger und langfristiger Teilnahme?
-
-Um diese Fragen zu beantworten, wurden 12 halbstrukturierte Interviews mit den Flüchtlingen und den am Projekt beteiligten Freiwilligen geführt. 
-
+Um herauszufinden, warum beide Gruppen auch nach 2 Jahren weiterhin regelmäßig kommen, wurde eine kleine Interviewstudie durchgeführt. Die Studie zeigte, dass die Hauptmotivation für langfristige Teilnahme am Projekt die familiäre Atmosphäre und die Freundschaft zwischen den Teilnehmern war. Eine der Freiwilligen hat das folgendermaßen ausgedrückt:
 Der ganze Beitrag in englischer Sprache:
 
-[Link zum Artikel in englischer Sprache](https://fluechtlinge.donbosco.at)
+„Ich wollte aktiv etwas für die Flüchtlinge tun und nicht nur über sie reden. Ich habe von einem Freund von Don Bosco für Flüchtlinge gehört und das hat für mich hervorragend funktioniert. Ich finde es toll, wie engagiert die Menschen im Projekt sind und wie mit jedem Menschen umgegangen wird, und die Atmosphäre immer herzlich und heimelig ist, man fühlt sich sofort angenommen. Aus diesem Grund habe ich mich weiterhin ehrenamtlich engagiert, weil alle mit so viel Herz dabei sind.“
+
+[Der ganze Beitrag und alle Forschungsergebnisse in englischer Sprache](/pdf/Motivation_of_volunteers.pdf)
