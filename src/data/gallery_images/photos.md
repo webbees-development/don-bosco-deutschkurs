@@ -1,4 +1,0 @@
----
-src: ./photos.jpg
-alt: 
----
