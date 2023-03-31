@@ -3,7 +3,7 @@ id: kurzportrait-nour
 title: Kurzportrait - Nour
 description: Kurzportrait - Nour
 excerpt: Ich war 24 Jahre alt, wie ich mit dem Deutsch lernen begonnen habe. Was besonders dabei hilft ist, eine positive Einstellung gegenüber der neuen schwierigen Sprache zu haben.
-date: 2022-01-01
+date: 2022-01-05
 featured_image:
   src: ./images/blog-3.1.jpg
   alt: Nour

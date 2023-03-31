@@ -3,7 +3,7 @@ id: kurzportrait-sajeda
 title: Kurzportrait - Sajeda
 description: Kurzportrait - Sajeda
 excerpt: Mein Name ist Sajeda und ich komme aus Syrien. Alles begann im Jahr 2017, als ein Freund meiner Schwester, Abdullah, ihr von diesem Kurs erzählte. Meine Schwester hatte keine Lust, aber ich schon.
-date: 2022-01-01
+date: 2022-01-02
 featured_image:
   src: ./images/blog-2.1.jpeg
   alt: Sajeda
