@@ -1,4 +1,5 @@
 ---
+name: haende.webp
 src: ./haende.webp
-alt: Hände
+alt: haende
 ---
