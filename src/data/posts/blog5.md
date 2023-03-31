@@ -1,6 +1,6 @@
 ---
 id: kurzportrait-elena
-title: Kurzportrait - ELena
+title: Kurzportrait - Elena
 description: Kurzportrait - Elena
 excerpt: Mein Name ist Elena und ich kam aus der Ukraine, als der Krieg begann. Nachdem ich von den Deutschkursen bei Don Bosco erfahren hatte und viele positive Rückmeldungen gehört hatte, wollte ich die Kurse besuchen.
 date: 2022-01-04
