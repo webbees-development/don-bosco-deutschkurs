@@ -177,7 +177,7 @@ export default {
 @import "~/assets/styles/global.scss";
 
 article {
-  background-image: url("../assets/images/index/hintergrund.webp");
+  background-image: url("../assets/images/index/hintergrund.jpg");
   background-repeat: repeat;
   // margin-block-end: 15rem;
   margin-bottom: 15rem;
