@@ -13,7 +13,7 @@ export default {
   metaInfo () {
     const siteUrl = this.$static.metadata.siteUrl
     const postPath = this.$page.post.path
-    const image = this.$page.post.featured_image ? this.$page.post.featured_image.src : undefined;
+    const image = this.$page.post.featured_image ? this.$page.post.featured_image.src.source : undefined;
     const imagePath = image ? `${siteUrl}${image.src}` : ''
     return {
       title: this.$page.post.title,
