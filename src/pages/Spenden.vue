@@ -144,7 +144,7 @@ p + p {
 }
 
 .donation {
-  background-image: url("../assets/images/index/hintergrund.webp");
+  background-image: url("../assets/images/index/hintergrund.jpg");
   // margin-block: 6rem 9rem;
   margin-top: 6rem;
   margin-bottom: 9rem;

@@ -313,7 +313,7 @@ export default {
 }
 
 .featured-post-section {
-  background-image: url("../assets/images/index/hintergrund.webp");
+  background-image: url("../assets/images/index/hintergrund.jpg");
   // padding-block-start: 6rem;
   padding-top: 6rem;
   // padding-block-end: 9rem;

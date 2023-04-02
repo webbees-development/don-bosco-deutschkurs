@@ -278,7 +278,7 @@ li + li {
 }
 
 .texture-background {
-  background: url("../assets/images/index/hintergrund.webp");
+  background: url("../assets/images/index/hintergrund.jpg");
   background-repeat: repeat;
 }
 .mobile-nav-toggle {
