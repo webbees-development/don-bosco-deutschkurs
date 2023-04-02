@@ -19,13 +19,16 @@
 
 <static-query>
   query {
-    posts: allPost(perPage: 5, filter: { published: { eq: true } }) {
+    posts: allPost(perPage: 6, filter: { published: { eq: true } }) {
       edges {
         node {
           id
           title
           featured_image {
-            src
+            src {
+              webp
+              source
+            }
             alt
           }
           excerpt

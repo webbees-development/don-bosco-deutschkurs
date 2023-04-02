@@ -10,7 +10,10 @@
           <p class="read-more">weiterlesen ></p>
         </div>
         <div>
-          <g-image immediate :src="loadedPosts[0].node.featured_image.src" :alt="loadedPosts[0].node.featured_image.alt"></g-image>
+          <picture>
+          <source :srcset="loadedPosts[0].node.featured_image.src.webp.src" type="image/webp">
+          <img :class="['post-image', white_border ? 'white-border': '']" :src="loadedPosts[0].node.featured_image.src.source.src" :alt="loadedPosts[0].node.featured_image.alt">
+        </picture>
         </div>
       </g-link>
     </section>
@@ -63,7 +66,10 @@
           id
           title
           featured_image {
-            src
+            src {
+              webp
+              source
+            }
             alt
           }
           excerpt

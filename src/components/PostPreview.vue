@@ -2,7 +2,10 @@
   <transition name="fade" appear>
     <g-link :to="link" class="preview">
       <figure>
-        <g-image immediate :class="['post-image', white_border ? 'white-border': '']" :src="image.src" :alt="image.alt"></g-image>
+        <picture>
+          <source :srcset="image.src.webp.src" type="image/webp">
+          <img :class="['post-image', white_border ? 'white-border': '']" :src="image.src.source.src" :alt="image.alt">
+        </picture>
         <figcaption>
           <h3>{{ title }}</h3>
           <p class="excerpt">{{ excerpt }}...</p>

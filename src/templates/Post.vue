@@ -2,7 +2,10 @@
   <Layout :texture_background="true">
     <section v-if="$page.post.published">
       <div class="image-container">
-        <g-image class="featured-image" :src="$page.post.featured_image.src" :alt="$page.post.featured_image.alt" />
+        <picture>
+          <source :srcset="$page.post.featured_image.src.webp.src" type="image/webp">
+          <img class="featured-image" :src="$page.post.featured_image.src.source.src" :alt="$page.post.featured_image.alt">
+        </picture>
       </div>
       <article>
         <div class="content">
@@ -36,7 +39,10 @@
       date (format: "DD.MM.YYYY")
       content
       featured_image {
-        src
+        src {
+          webp
+          source
+        }
         alt
       }
       published
