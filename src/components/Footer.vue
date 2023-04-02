@@ -92,7 +92,7 @@ export default {
 footer {
   color: var(--clr-primary);
   font-family: var(--ff-primary);
-  background-image: url("../assets/images/index/hintergrund.webp");
+  background-image: url("../assets/images/index/hintergrund.jpg");
   // padding-block: 4.5rem 1rem;
   padding-top: 4.5rem;
   padding-bottom: 1rem;
