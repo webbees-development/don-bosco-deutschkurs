@@ -5,7 +5,9 @@ description: Kurzportrait - Mudi
 excerpt: Mein Name ist Mudi und ich habe mich 2015 für den Deutschkurs angemeldet. Der Kurs war für mich wie eine zweite Familie und mein zweites Zuhause.
 date: 2022-01-02
 featured_image:
-  src: ./images/blog-6.jpg
+  src: 
+    webp: ./images/blog-6.webp
+    source: ./images/blog-6.jpg
   alt: Mudi
 published: true
 ---

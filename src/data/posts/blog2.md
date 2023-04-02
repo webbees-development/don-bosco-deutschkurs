@@ -5,7 +5,9 @@ description: Kurzportrait - Sajeda
 excerpt: Mein Name ist Sajeda und ich komme aus Syrien. Alles begann im Jahr 2017, als ein Freund meiner Schwester, Abdullah, ihr von diesem Kurs erzählte. Meine Schwester hatte keine Lust, aber ich schon.
 date: 2022-01-02
 featured_image:
-  src: ./images/blog-2.1.jpeg
+  src: 
+    webp: ./images/blog-2.1.webp
+    source: ./images/blog-2.1.jpeg
   alt: Sajeda
 published: true
 ---
@@ -18,10 +20,10 @@ Und das war nicht alles. Im Oktober 2017 wurde ein Mutter-Kind-Kurs gebildet, de
 
 Bei Don Bosco für Flüchtlinge gibt es viele unterschiedlichen Aktivitäten und immer etwas neues zu erzählen.
 
-![Sajeda und Kinder](./images/blog-2.2.jpg)
+![Sajeda und Kinder](./images/blog-2.2.webp)
 
-![Sajeda und Kinder](./images/blog-2.3.jpg)
+![Sajeda und Kinder](./images/blog-2.3.webp)
 
-![Sajeda und Kinder](./images/blog-2.4.jpg)
+![Sajeda und Kinder](./images/blog-2.4.webp)
 
 

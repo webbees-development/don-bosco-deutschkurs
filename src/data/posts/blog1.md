@@ -5,7 +5,9 @@ description: Description
 excerpt:
 date: 2022-01-01
 featured_image:
-  src: ./images/blog-1.png
+  src: 
+    webp: ./images/blog-1.webp
+    source: ./images/blog-1.png
   alt: Wort-Wolke, die die am häufigst verwendeten Wörter zeigt
 published: true
 ---
