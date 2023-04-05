@@ -10,4 +10,12 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   // Use the Ininite Loading package
   Vue.use(InfiniteLoading)
+
+  head.link.push({
+    rel: 'preload',
+    fetchpriority: "high",
+    as: "image",
+    href: "./assets/images/index/hintergrund.jpg",
+    type: "image/jpg",
+  })
 }
