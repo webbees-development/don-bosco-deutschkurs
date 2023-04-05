@@ -63,6 +63,7 @@ module.exports = {
   },
   titleTemplate: '%s | Don Bosco für Flüchtlinge',
   css: {
+    split: true,
     loaderOptions: {
       postcss: {
         plugins: postcssPlugins
