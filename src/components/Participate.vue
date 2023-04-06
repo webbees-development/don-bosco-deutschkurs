@@ -159,7 +159,7 @@ a {
   max-width: 100%;
 }
 .image-container > img {
-  padding: 6.5% 4.1% 13% 4.5%;
+  padding: 6.4% 4% 13% 4.5%;
   object-fit: cover;
   aspect-ratio: 1.3;
 }
