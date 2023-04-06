@@ -2,7 +2,16 @@
   <footer>
     <div class="footer_content_1">
       <a class="logo" href="#">
-        <g-image src="../assets/images/logo/logo.png" alt="Don Bosco Logo" />
+        <g-image
+          v-show="$useWebp === true" 
+          src="../assets/images/logo/logo.webp" 
+          alt="Don Bosco Logo" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
+          src="../assets/images/logo/logo.png" 
+          alt="Don Bosco Logo" 
+        />
       </a>
     </div>
     <div class="footer_content_2">

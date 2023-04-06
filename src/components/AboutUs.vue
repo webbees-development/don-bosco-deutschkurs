@@ -1,6 +1,15 @@
 <template>
   <section id="about-us" class="about-us">
-    <g-image src="../assets/images/index/sprachen.jpg" alt="Zeichnung von mehreren Menschen verschiedener Herkunft, die Sie auf unterschiedlichen Sprachen begrüßen" />
+    <g-image
+      v-show="$useWebp === true" 
+      src="../assets/images/index/sprachen.webp" 
+      alt="Zeichnung von mehreren Menschen verschiedener Herkunft, die Sie auf unterschiedlichen Sprachen begrüßen" 
+    />
+    <g-image
+      v-show="$useWebp === false" 
+      src="../assets/images/index/sprachen.jpg" 
+      alt="Zeichnung von mehreren Menschen verschiedener Herkunft, die Sie auf unterschiedlichen Sprachen begrüßen" 
+    />
     <div>
       <h2>
         Wir helfen Flüchtlingen in Wien, <br class="show-on-small" />um Perspektiven zu eröffnen. <br class="show-on-small" />Sei auch

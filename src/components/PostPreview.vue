@@ -2,10 +2,18 @@
   <transition name="fade" appear>
     <g-link :to="link" class="preview">
       <figure>
-        <picture>
-          <source :srcset="image.src.webp.src" type="image/webp">
-          <img :class="['post-image', white_border ? 'white-border': '']" :src="image.src.source.src" :alt="image.alt">
-        </picture>
+        <g-image
+          v-show="$useWebp === true" 
+          :class="['post-image', white_border ? 'white-border': '']" 
+          :src="image.src.webp" 
+          :alt="image.alt" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
+          :class="['post-image', white_border ? 'white-border': '']" 
+          :src="image.src.source" 
+          :alt="image.alt" 
+        />
         <figcaption>
           <h3>{{ title }}</h3>
           <p class="excerpt">{{ excerpt }}...</p>
@@ -18,6 +26,11 @@
 
 <script>
 export default {
+  // computed: {
+  //   isServer() {
+  //     return process.isServer;
+  //   }
+  // },
   props: {
     excerpt: {
       type: String,
@@ -39,7 +52,7 @@ export default {
       type: Boolean,
       default: false,
     }
-  }
+  },
 }
 </script>
 

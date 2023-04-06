@@ -13,9 +13,16 @@
       </blockquote>
     </div>
     <g-image
+      v-show="$useWebp === true" 
       style="visibility: hidden"
       src="../assets/images/index/zitat.webp"
-      alt="Bild von einer Frau, die ihre Arme in die Höhe streckt"
+      alt="Gruppenfoto vom Faschingsfest" 
+    />
+    <g-image
+      v-show="$useWebp === false" 
+      style="visibility: hidden"
+      src="../assets/images/index/zitat.jpg"
+      alt="Gruppenfoto vom Faschingsfest" 
     />
   </section>
 </template>

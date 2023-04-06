@@ -12,7 +12,16 @@
       <a class="btn" :href="$static.metadata.calendly_url">Probetermin vereinbaren</a>
     </div>
     <div class="image">
-      <g-image src="../assets/images/index/haende.jpg" alt="Menschen reichen sich ihre Hände im Kreis und zwei Hände formen in der Mitte des Kreises ein Herz" />
+      <g-image
+        v-show="$useWebp === true" 
+        src="../assets/images/index/haende.webp" 
+        alt="Menschen reichen sich ihre Hände im Kreis und zwei Hände formen in der Mitte des Kreises ein Herz" 
+      />
+      <g-image
+        v-show="$useWebp === false" 
+        src="../assets/images/index/haende.jpg" 
+        alt="Menschen reichen sich ihre Hände im Kreis und zwei Hände formen in der Mitte des Kreises ein Herz" 
+      />
     </div>
   </section>
 </template>

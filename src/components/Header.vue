@@ -5,9 +5,16 @@
       <div class="logo">
         <g-link to="/">
           <g-image
+            v-show="$useWebp === true" 
             immediate
-            src="../assets/images/logo/logo.png"
-            alt="Don Bosco für Flüchtlinge Logo"
+            src="../assets/images/logo/logo.webp" 
+            alt="Don Bosco für Flüchtlinge Logo" 
+          />
+          <g-image
+            v-show="$useWebp === false" 
+            immediate
+            src="../assets/images/logo/logo.png" 
+            alt="Don Bosco für Flüchtlinge Logo" 
           />
         </g-link>
       </div>

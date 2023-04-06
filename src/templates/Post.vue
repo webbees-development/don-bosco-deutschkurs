@@ -2,10 +2,18 @@
   <Layout :texture_background="true">
     <section v-if="$page.post.published">
       <div class="image-container">
-        <picture>
-          <source :srcset="$page.post.featured_image.src.webp.src" type="image/webp">
-          <img class="featured-image" :src="$page.post.featured_image.src.source.src" :alt="$page.post.featured_image.alt">
-        </picture>
+        <g-image
+          v-show="$useWebp === true" 
+          class="featured-image"
+          :src="$page.post.featured_image.src.webp"
+          :alt="$page.post.featured_image.alt" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
+          class="featured-image"
+          :src="$page.post.featured_image.src.source"
+          :alt="$page.post.featured_image.alt" 
+        />
       </div>
       <article>
         <div class="content">

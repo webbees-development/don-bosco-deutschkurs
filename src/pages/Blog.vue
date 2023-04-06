@@ -10,10 +10,18 @@
           <p class="read-more">weiterlesen ></p>
         </div>
         <div>
-          <picture>
-            <source :srcset="loadedPosts[0].node.featured_image.src.webp.src" type="image/webp">
-            <img :class="['post-image', white_border ? 'white-border': '']" :src="loadedPosts[0].node.featured_image.src.source.src" :alt="loadedPosts[0].node.featured_image.alt">
-          </picture>
+          <g-image
+            v-show="$useWebp === true" 
+            :class="['post-image', white_border ? 'white-border': '']"
+            :src="loadedPosts[0].node.featured_image.src.webp"
+            :alt="loadedPosts[0].node.featured_image.alt" 
+          />
+          <g-image
+            v-show="$useWebp === false" 
+            :class="['post-image', white_border ? 'white-border': '']"
+            :src="loadedPosts[0].node.featured_image.src.source"
+            :alt="loadedPosts[0].node.featured_image.alt" 
+          />
         </div>
       </g-link>
     </section>

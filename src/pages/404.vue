@@ -3,7 +3,16 @@
     <section>
       <h1>Fehler 404</h1>
       <p>Hupsi. Das war wohl nix.<br>Hier ein Kätzchen zur Aufmunterung:</p>
-      <g-image src="../assets/images/404/404.png" alt="Kätzchen spielt mit Wollball" />
+      <g-image
+        v-show="$useWebp === true" 
+        src="../assets/images/404/404.webp"
+        alt="Kätzchen spielt mit Wollball" 
+      />
+      <g-image
+        v-show="$useWebp === false" 
+        src="../assets/images/404/404.png"
+        alt="Kätzchen spielt mit Wollball" 
+      />
       <g-link class="btn" to="/">← Startseite</g-link>
     </section>
   </Layout>

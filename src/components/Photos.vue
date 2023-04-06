@@ -8,45 +8,87 @@
     <div class="image-grid">
       <div class="image">
         <g-image
-          src="../assets/images/index/photos-1.jpg"
-          alt="Willkommensposter in verschiedenen Sprachen"
-        ></g-image>
+          v-show="$useWebp === true" 
+          src="../assets/images/index/photos-1.webp" 
+          alt="Willkommensposter in verschiedenen Sprachen" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
+          src="../assets/images/index/photos-1.jpg" 
+          alt="Willkommensposter in verschiedenen Sprachen" 
+        />
       </div>
       <div class="image">
         <g-image
-          src="../assets/images/index/photos-2.png"
-          alt="Jemand bekommt ein Armband angelegt"
-        ></g-image>
+          v-show="$useWebp === true" 
+          src="../assets/images/index/photos-2.webp"
+          alt="Jemand bekommt ein Armband angelegt" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
+          src="../assets/images/index/photos-2.jpg"
+          alt="Jemand bekommt ein Armband angelegt" 
+        />
       </div>
       <div class="image">
         <g-image
+          v-show="$useWebp === true" 
+          src="../assets/images/index/photos-4.webp"
+          alt="Ein Bild vom Deutschkurs wie die Schüler:innen am Tisch sitzen mit ihrer Lehrerin" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
           src="../assets/images/index/photos-4.jpg"
-          alt="Ein Bild vom Deutschkurs wie die Schüler:innen am Tisch sitzen mit ihrer Lehrerin"
-        ></g-image>
+          alt="Ein Bild vom Deutschkurs wie die Schüler:innen am Tisch sitzen mit ihrer Lehrerin" 
+        />
       </div>
       <div class="image">
         <g-image
+          v-show="$useWebp === true" 
+          src="../assets/images/index/photos-9.webp"
+          alt="Eine Freiwillige schaut einem Lernenden über die Schulter" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
           src="../assets/images/index/photos-9.jpg"
-          alt="Eine Freiwillige schaut einem Lernenden über die Schulter"
-        ></g-image>
+          alt="Eine Freiwillige schaut einem Lernenden über die Schulter" 
+        />
       </div>
       <div class="image">
         <g-image
+          v-show="$useWebp === true" 
+          src="../assets/images/index/photos-3.webp"
+          alt="Freiwillige posieren auf einer Treppe" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
           src="../assets/images/index/photos-3.jpg"
-          alt="Freiwillige posieren auf einer Treppe"
-        ></g-image>
+          alt="Freiwillige posieren auf einer Treppe" 
+        />
       </div>
       <div class="image">
         <g-image
+          v-show="$useWebp === true" 
           src="../assets/images/index/photos-8.jpg"
-          alt="Eine Freiwillige sitzt mit 3 Schülern zusammen auf der Couch"
-        ></g-image>
+          alt="Eine Freiwillige sitzt mit 3 Schülern zusammen auf der Couch" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
+          src="../assets/images/index/photos-8.jpg"
+          alt="Eine Freiwillige sitzt mit 3 Schülern zusammen auf der Couch" 
+        />
       </div>
       <div class="image">
         <g-image
+          v-show="$useWebp === true" 
           src="../assets/images/index/photos-5.jpg"
-          alt="Gruppenfoto vom Faschingsfest"
-        ></g-image>
+          alt="Gruppenfoto vom Faschingsfest" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
+          src="../assets/images/index/photos-5.jpg"
+          alt="Gruppenfoto vom Faschingsfest" 
+        />
       </div>
     </div>
     <g-link class="btn" to="/photos/">Zu allen Fotos</g-link>

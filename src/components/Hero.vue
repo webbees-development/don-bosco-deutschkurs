@@ -2,7 +2,16 @@
   <section class="hero" id="hero">
     <figure class="image-container">
       <div class="image">
-        <g-image src="../assets/images/index/photos-27.jpg" alt="Kursteilnehmer Don Boscos" />
+        <g-image
+          v-show="$useWebp === true" 
+          src="../assets/images/index/photos-27.webp" 
+          alt="Kursteilnehmer Don Boscos" 
+        />
+        <g-image
+          v-show="$useWebp === false" 
+          src="../assets/images/index/photos-27.jpg" 
+          alt="Kursteilnehmer Don Boscos" 
+        />
       </div>
       <figcaption>
         <blockquote>Der Deutschkurs hat mein Leben verändert und mir eine Perspektive
