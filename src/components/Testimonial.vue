@@ -31,6 +31,7 @@
 @import "~/assets/styles/global.scss";
 .testimonial {
   position: relative;
+  background-image: url("../assets/images/index/zitat.jpg");
   background-image: url("../assets/images/index/zitat.webp");
   background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;

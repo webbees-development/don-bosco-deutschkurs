@@ -60,6 +60,7 @@ h2 {
   text-align: center;
 
   background-image: url("../assets/images/index/hintergrund.jpg");
+  background-image: url("../assets/images/index/hintergrund.webp");
   // padding-block: 9rem;
   padding-top: 9rem;
   padding-bottom: 9rem;

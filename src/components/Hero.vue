@@ -164,6 +164,7 @@ a {
 }
 .hero {
   background-image: url("../assets/images/index/hintergrund.jpg");
+  background-image: url("../assets/images/index/hintergrund.webp");
   display: flex;
   // padding-block: 6rem;
   padding-top: 6rem;
@@ -207,6 +208,7 @@ a {
 .image {
   position: relative;
   background-image: url("../assets/images/index/rahmen.png");
+  background-image: url("../assets/images/index/rahmen.webp");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;

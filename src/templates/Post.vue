@@ -186,6 +186,7 @@ export default {
 
 article {
   background-image: url("../assets/images/index/hintergrund.jpg");
+  background-image: url("../assets/images/index/hintergrund.webp");
   background-repeat: repeat;
   // margin-block-end: 15rem;
   margin-bottom: 15rem;
