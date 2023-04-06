@@ -116,7 +116,7 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/styles/global.scss";
 
-section{
+section {
   text-align: center;
   padding: 5rem min(16vw, 17.5rem);
   display: flex;
@@ -124,7 +124,8 @@ section{
   justify-content: center;
   align-items: center;
 }
-p{
+
+p {
   // padding-block: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;

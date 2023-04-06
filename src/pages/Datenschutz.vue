@@ -182,7 +182,6 @@ ul {
 
 .card {
   background-image: url("../assets/images/index/hintergrund.jpg");
-  background-image: url("../assets/images/index/hintergrund.webp");
   // margin-block-end: 8rem;
   margin-bottom: 8rem;
   // margin-block-start: 4rem;

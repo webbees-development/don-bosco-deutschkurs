@@ -152,7 +152,6 @@ a {
 }
 .image-container {
   background-image: url("../assets/images/index/rahmen2.png");
-  background-image: url("../assets/images/index/rahmen2.webp");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 27.5rem;

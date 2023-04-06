@@ -61,7 +61,6 @@ a {
 .about-us div {
   text-align: center;
   background-image: url("../assets/images/index/hintergrund.jpg");
-  background-image: url("../assets/images/index/hintergrund.webp");
   background-repeat: repeat;
   padding: 5.5rem 7.75rem;
 
