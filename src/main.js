@@ -11,11 +11,23 @@ export default function (Vue, { router, head, isClient }) {
   // Use the Ininite Loading package
   Vue.use(InfiniteLoading);
 
+  function useWebp() {
+    var elem = document.createElement('canvas');
+    if (!!(elem.getContext && elem.getContext('2d'))) {
+      // was able or not to get WebP representation
+      return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+    }
+    // very old browser like IE 8, canvas not supported
+    return false;
+  }
+
+  Vue.prototype.$useWebp = isClient ? useWebp() : false;
+  
   // head.link.push({
   //   rel: 'preload',
   //   fetchpriority: "high",
   //   as: "image",
-  //   href: "./assets/images/index/hintergrund.jpg",
+  //   href: require(`!!assets-loader!~/assets/images/index/hintergrund.jpg`),
   //   type: "image/jpg",
   // });
 }
