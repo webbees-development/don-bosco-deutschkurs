@@ -37,10 +37,10 @@
       this.btnPrev = this.$refs.prev;
   
       this.carousel.addEventListener("mousedown", this.handleStartDrag);
-      this.carousel.addEventListener("touchstart", this.handleStartDrag);
+      this.carousel.addEventListener("touchstart", this.handleStartDrag, { passive: true });
   
       this.carousel.addEventListener("mousemove", this.handleMoveDrag);
-      this.carousel.addEventListener("touchmove", this.handleMoveDrag);
+      this.carousel.addEventListener("touchmove", this.handleMoveDrag, { passive: true });
   
       this.carousel.addEventListener("mouseup", this.handleStopDrag);
       this.carousel.addEventListener("touchend", this.handleStopDrag);
