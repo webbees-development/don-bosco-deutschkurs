@@ -12,9 +12,11 @@
 @import "~/assets/styles/global.scss";
 .ending {
   text-align: center;
+
   // padding-block: clamp(3rem, 7.5vw, 9rem);
-  padding-top: clamp(3rem, 7.5vw, 9rem);
-  padding-bottom: clamp(3rem, 7.5vw, 9rem);
+  padding-top: min(7.5vw, 9rem);
+  padding-bottom: min(7.5vw, 9rem);
+  
   // padding-inline: var(--padding-global-inline);
   padding-left: var(--padding-global-inline);
   padding-right: var(--padding-global-inline);
