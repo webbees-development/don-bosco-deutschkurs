@@ -191,7 +191,7 @@ header {
 }
 nav {
   display: flex;
-  gap: 4rem;
+  // //gap: 4rem;
   align-items: center;
 }
 nav li a {
@@ -219,8 +219,10 @@ ul {
   display: flex;
 }
 li + li {
-  // margin-inline-start: min(1.8vw, 2.5rem);
   margin-left: min(1.8vw, 2.5rem);
+}
+.btn{
+  margin-left: 3rem;
 }
 .btn svg {
   display: inline-block;
@@ -254,12 +256,10 @@ li + li {
   }
 
   span {
-    // padding-inline: 1rem 2rem;
     padding-left: 1rem;
     padding-right: 2rem;
 
     @media (max-width: $mobile-break) {
-      // padding-inline: 0.5rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
       font-size: 1rem;
@@ -322,7 +322,7 @@ li + li {
   nav {
     flex-direction: column;
     position: fixed;
-    inset: 0 0 0 55%;
+    inset: 0 0 0 50%;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.9);
     padding: min(30vh, 13rem) 2em;
@@ -344,10 +344,12 @@ li + li {
   }
   
   li + li {
-    // margin-inline-start: 0;
     margin-left: 0;
-    // margin-block-start: max(4vh, 2rem);
     margin-top: max(4vh, 2rem);
+  }
+  .btn{
+    margin-top: 3rem;
+    margin-left: 0;
   }
 }
 
