@@ -166,10 +166,8 @@ export default {
 @import "~/assets/styles/global.scss";
 .photos {
   text-align: center;
-  // padding-inline: var(--padding-global-inline);
   padding-left: var(--padding-global-inline);
   padding-right: var(--padding-global-inline);
-  // padding-block: 4rem 2em;
   padding-top: 4rem;
   padding-bottom: 2em;
 
@@ -184,17 +182,14 @@ export default {
   }
 }
 .photos-container {
-  // padding-block: 4rem 6rem;
   padding-top: 4rem;
   padding-bottom: 6rem;
 
   @media (max-width: 720px) {
-    // padding-block: 2rem 3rem;
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
   @media (max-width: 488px) {
-    // padding-block: 3rem 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -205,6 +200,10 @@ export default {
   background-size: 100%;
   width: 25rem;
   max-width: 100%;
+
+  padding-bottom: 78%; /* Padding hack ratio */
+  position: relative;
+  overflow: hidden;
 
   @media (max-width: 1079px) {
     width: 20rem;
@@ -220,10 +219,15 @@ export default {
   }
 }
 .photo-card > img {
-  aspect-ratio: 1.3;
-  object-fit: cover;
-  padding: 6.4% 4% 13% 4.5%; 
+ position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 6.4% 4% 14% 4.5%; 
+
+
 }
 
 figure {
