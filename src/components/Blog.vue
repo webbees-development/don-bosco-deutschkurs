@@ -39,51 +39,53 @@
 </static-query>
 
 <script>
-import GenericSlider from './GenericSlider.vue';
-import PostPreview from './PostPreview.vue';
-export default{
-  components:{
+import GenericSlider from "./GenericSlider.vue";
+import PostPreview from "./PostPreview.vue";
+export default {
+  components: {
     GenericSlider,
-    PostPreview
+    PostPreview,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
 @import "~/assets/styles/global.scss";
 
 h2 {
-  // padding-block-end: 3.125rem;
   padding-bottom: 3.125rem;
 }
-.blog { 
+.blog {
   text-align: center;
 
   background-image: url("../assets/images/index/hintergrund.jpg");
-  // padding-block: 9rem;
   padding-top: 9rem;
   padding-bottom: 9rem;
-  // padding-inline: min(11vw, 15rem);
   padding-left: min(11vw, 15rem);
   padding-right: min(11vw, 15rem);
-  // padding-inline: min(9vw, 11rem);
 
   --carousel-btn-spacing: -5.5rem;
   --carousel-btn-upper-spacing: 16%;
   --carousel-btn-color: var(--clr-primary);
 
   @media (max-width: 1750px) {
-    --carousel-btn-spacing: -4.5rem;
+    --carousel-btn-spacing: -3.5rem;
     --carousel-btn-upper-spacing: 14%;
   }
   @media (max-width: 1500px) {
-    //--carousel-btn-spacing: -3rem;
+    --carousel-btn-upper-spacing: 12%;
+  }
+  @media (max-width: 1200px) {
     --carousel-btn-upper-spacing: 20%;
   }
-
+  @media (max-width: 900px) {
+    --carousel-btn-upper-spacing: 12%;
+  }
+  @media (max-width: 650px) {
+    --carousel-btn-upper-spacing: 21%;
+  }
 }
 .btn {
-  // margin-block-start: 5rem;
   margin-top: 5rem;
 }
 </style>
