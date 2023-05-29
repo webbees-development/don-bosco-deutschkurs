@@ -3,33 +3,37 @@
     <figure class="image-container">
       <div class="image">
         <g-image
-          v-show="$useWebp === true" 
-          src="../assets/images/index/photos-27.webp" 
-          alt="Kursteilnehmer Don Boscos" 
+          v-show="$useWebp === true"
+          src="../assets/images/index/photos-27.webp"
+          alt="Kursteilnehmer Don Boscos"
         />
         <g-image
-          v-show="$useWebp === false" 
-          src="../assets/images/index/photos-27.jpg" 
-          alt="Kursteilnehmer Don Boscos" 
+          v-show="$useWebp === false"
+          src="../assets/images/index/photos-27.jpg"
+          alt="Kursteilnehmer Don Boscos"
         />
       </div>
       <figcaption>
-        <blockquote>Der Deutschkurs hat mein Leben verändert und mir eine Perspektive
-          eröffnet.</blockquote>
+        <blockquote>
+          Der Deutschkurs hat mein Leben verändert und mir eine Perspektive
+          eröffnet.
+        </blockquote>
         <p class="author">Rami, 2015 vor dem Krieg in Syrien geflüchtet.</p>
       </figcaption>
     </figure>
     <div class="content">
       <h1>Du willst dich in Wien <br />für Flüchtlinge einsetzen?</h1>
       <p>
-        Nimm dir 2 Stunden Zeit, teile deine Sprache Deutsch und bereichere damit
-        (d)ein Leben.
+        Nimm dir 2 Stunden Zeit, teile deine Sprache Deutsch und bereichere
+        damit (d)ein Leben.
       </p>
       <p>
         Komm zu einem unserer Deutschkurse <br />für Flüchtlinge aus
         verschiedenen Ländern.
       </p>
-      <a class="btn" :href="$static.metadata.calendly_url">Probetermin vereinbaren</a>
+      <a class="btn" :href="$static.metadata.calendly_url"
+        >Probetermin vereinbaren</a
+      >
     </div>
     <div class="background-languages">
       <span class="welcome">
@@ -94,7 +98,6 @@ blockquote {
   font-size: var(--fs-300);
   font-style: italic;
   line-height: 1.13;
-  // margin-block-end: 0.75rem;
   margin-bottom: 0.75rem;
 }
 blockquote::before {
@@ -105,20 +108,16 @@ blockquote::after {
   position: absolute;
 }
 a {
-  // margin-block-start: 2.5rem;
   margin-top: 2.5rem;
 }
 figcaption {
   text-align: center;
   max-width: 100%;
-  // padding-block-start: 1rem;
   padding-top: 1rem;
-  // padding-inline: min(5vw, 5.5rem);
   padding-left: min(5vw, 5.5rem);
   padding-right: min(5vw, 5.5rem);
 
   @media (max-width: $first-break) {
-    // padding-inline: 2.5vw;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
   }
@@ -132,7 +131,6 @@ p.author {
 .background-languages {
   position: absolute;
   inset: 0 75% 0 -1rem;
-  // padding-block-start: 0.75rem;
   padding-top: 0.75rem;
   background-color: var(--clr-languages-bg);
   color: var(--clr-languages-font);
@@ -142,35 +140,28 @@ p.author {
   line-height: 1.4;
 }
 .content {
-  // margin-block-end: 1rem;
   margin-bottom: 1rem;
-  // margin-inline-start: min(9vw, 10rem);
   margin-left: min(9vw, 10rem);
 }
 .content p,
 a {
-  // margin-inline-start: 2.5rem;
   margin-left: 2.5rem;
 }
 .content p:nth-of-type(1) {
-  // margin-block-start: 1.75rem;
   margin-top: 1.75rem;
   max-width: 28ch;
 }
 .content p:nth-of-type(2) {
-  // margin-block-start: 1.125rem;
   margin-top: 1.125rem;
   max-width: 34ch;
 }
 .hero {
   background-image: url("../assets/images/index/hintergrund.jpg");
   display: flex;
-  // padding-block: 6rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
   align-items: center;
   position: relative;
-  // padding-inline: var(--padding-global-inline);
   padding-left: var(--padding-global-inline);
   padding-right: var(--padding-global-inline);
 }
@@ -196,10 +187,8 @@ a {
   display: flex;
   flex-direction: column;
   background-color: var(--clr-neutral);
-  // padding-block: 2.5rem 7rem;
   padding-top: 2.5rem;
   padding-bottom: 7rem;
-  // padding-inline: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: min(35vw, 39.5rem);
@@ -219,20 +208,15 @@ a {
 }
 @media (max-width: $tablet-break) {
   a {
-    // margin-block-start: 3rem;
     margin-top: 3rem;
-    // margin-inline: auto;
     margin-left: auto;
     margin-right: auto;
   }
   figcaption {
-    // padding-block-start: 0;
     padding-top: 0;
-    // padding-inline-start: 0;
     padding-left: 0;
   }
   .background-languages {
-    // padding-block-start: 0;
     padding-top: 0;
     right: 0;
     bottom: 80%;
@@ -250,15 +234,12 @@ a {
     }
   }
   .content {
-    // margin-inline-start: 0;
     margin-left: 0;
     text-align: center;
-    // margin-block: 8% 10%;
     margin-top: 8%;
     margin-bottom: 10%;
   }
   .content p {
-    // margin-inline: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -280,14 +261,12 @@ a {
     width: 80%;
   }
   .image img {
-    // padding-block-end: 20%;
     padding-bottom: 20%;
   }
 }
 @media (max-width: $mobile-break) {
   figcaption {
     text-align: center;
-    // padding-inline: 3rem;
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -295,11 +274,9 @@ a {
     display: none;
   }
   .content {
-    // margin-block-start: 4rem;
     margin-top: 4rem;
   }
   .hero {
-    // padding-block-start: 2rem;
     padding-top: 2rem;
   }
   .hero::after {
@@ -310,7 +287,6 @@ a {
   .image-container {
     max-width: 100%;
     padding: 0;
-    // padding-block-end: 2rem;
     padding-bottom: 2rem;
     flex-direction: column;
     justify-content: center;
