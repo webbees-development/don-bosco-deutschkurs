@@ -100,14 +100,16 @@
 .photos {
   text-align: center;
   padding: 9rem min(16vw, 17.5rem);
+
   br {
     display: none;
   }
+
   @media (max-width: $tablet-break) {
-    // padding-inline: var(--padding-global-inline);
     padding-left: var(--padding-global-inline);
     padding-right: var(--padding-global-inline);
   }
+
   @media (max-width: $mobile-break) {
     br {
       display: block;
@@ -118,7 +120,6 @@
   padding-bottom: 0.5rem;
 }
 .image-grid {
-  // padding-block: 3.5rem 6rem;
   padding-top: 3.5rem;
   padding-bottom: 6rem;
   display: grid;
@@ -131,22 +132,13 @@
 
   @media (max-width: $mobile-break) {
     grid-template-columns: repeat(2, 1fr);
-    .image:nth-of-type(even) {
-      grid-column: 2/3;
-
-      img {
-        aspect-ratio: 1;
-      }
-    }
-
+    .image:nth-of-type(even),
     .image:nth-of-type(odd) {
-      grid-column: 1/2;
-
+      grid-column: span 1;
       img {
         aspect-ratio: 1;
       }
     }
-
     .image:last-child {
       display: none;
     }
@@ -154,64 +146,46 @@
 
   @media (max-width: 400px) {
     display: block;
-    // padding-block: 2.5rem 3rem;
     padding-top: 2.5rem;
     padding-bottom: 3rem;
 
     .image:nth-child(n) {
       img {
         aspect-ratio: 1.4;
-        // padding-block-end: 2rem;
         padding-bottom: 2rem;
       }
     }
   }
 }
+
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.image:nth-child(1) {
-  grid-column: 1/8;
-  img {
-    aspect-ratio: 9/2;
-  }
-}
-.image:nth-child(2) {
-  grid-column: 8/13;
-  img {
-    aspect-ratio: 1.4;
-  }
-}
-.image:nth-child(3) {
-  grid-column: 1/5;
-  img {
-    aspect-ratio: 1;
-  }
-}
-.image:nth-child(4) {
-  grid-column: 5/9;
-  img {
-    aspect-ratio: 1;
-  }
-}
-.image:nth-child(5) {
-  grid-column: 9/13;
-  img {
-    aspect-ratio: 1;
-  }
-}
-.image:nth-child(6) {
-  grid-column: 1/6;
-  img {
-    aspect-ratio: 1.4;
-  }
-}
+
+
+.image:nth-child(1),
 .image:nth-child(7) {
-  grid-column: 6/13;
+  grid-column: span 7;
   img {
     aspect-ratio: 9/2;
   }
 }
+.image:nth-child(2),
+.image:nth-child(6)  {
+  grid-column: span 5;
+  img {
+    aspect-ratio: 1.4;
+  }
+}
+.image:nth-child(3),
+.image:nth-child(4),
+.image:nth-child(5) {
+  grid-column: span 4;
+  img {
+    aspect-ratio: 1;
+  }
+}
+
 </style>
