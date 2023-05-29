@@ -7,38 +7,44 @@
     <div class="participate-container">
       <figure>
         <div class="image-container">
-          <g-image
-            v-show="$useWebp === true" 
-            src="../assets/images/index/mithelfen-img1.webp" 
-            alt="Frauen und Männer posieren mit ihrem Schuh am Ohr als würden sie jemanden anrufen" 
-          />
-          <g-image
-            v-show="$useWebp === false" 
-            src="../assets/images/index/mithelfen-img1.jpg" 
-            alt="Frauen und Männer posieren mit ihrem Schuh am Ohr als würden sie jemanden anrufen" 
-          />
+          <div class="image">
+            <g-image
+              v-show="$useWebp === true"
+              src="../assets/images/index/mithelfen-img1.webp"
+              alt="Frauen und Männer posieren mit ihrem Schuh am Ohr als würden sie jemanden anrufen"
+            />
+            <g-image
+              v-show="$useWebp === false"
+              src="../assets/images/index/mithelfen-img1.jpg"
+              alt="Frauen und Männer posieren mit ihrem Schuh am Ohr als würden sie jemanden anrufen"
+            />
+          </div>
         </div>
         <figcaption>
           <h3>1. Probetermin vereinbaren</h3>
           <p>
             Klicke auf den Button
-            <a :href="$static.metadata.calendly_url">„Probetermin vereinbaren“</a>
+            <a :href="$static.metadata.calendly_url"
+              >„Probetermin vereinbaren“</a
+            >
             und such’ dir einen Abend aus, an dem du dir 2 Stunden Zeit nimmst.
           </p>
         </figcaption>
       </figure>
       <figure>
         <div class="image-container">
-          <g-image
-            v-show="$useWebp === true" 
-            src="../assets/images/index/mithelfen-img2.webp" 
-            alt="Eine Freiwillige hilft den Schülern bei ihren Aufgaben am Tisch" 
-          />
-          <g-image
-            v-show="$useWebp === false" 
-            src="../assets/images/index/mithelfen-img2.jpg" 
-            alt="Eine Freiwillige hilft den Schülern bei ihren Aufgaben am Tisch" 
-          />
+          <div class="image">
+            <g-image
+              v-show="$useWebp === true"
+              src="../assets/images/index/mithelfen-img2.webp"
+              alt="Eine Freiwillige hilft den Schülern bei ihren Aufgaben am Tisch"
+            />
+            <g-image
+              v-show="$useWebp === false"
+              src="../assets/images/index/mithelfen-img2.jpg"
+              alt="Eine Freiwillige hilft den Schülern bei ihren Aufgaben am Tisch"
+            />
+          </div>
         </div>
         <figcaption>
           <h3>2. Sei bei einem Kurs dabei</h3>
@@ -50,16 +56,18 @@
       </figure>
       <figure>
         <div class="image-container">
-          <g-image
-            v-show="$useWebp === true" 
-            src="../assets/images/index/mithelfen-img3.webp" 
-            alt="Lachender Mann auf einer Feier mit lachenden Menschen im Hintergrund" 
-          />
-          <g-image
-            v-show="$useWebp === false" 
-            src="../assets/images/index/mithelfen-img3.jpg" 
-            alt="Lachender Mann auf einer Feier mit lachenden Menschen im Hintergrund" 
-          />
+          <div class="image">
+            <g-image
+              v-show="$useWebp === true"
+              src="../assets/images/index/mithelfen-img3.webp"
+              alt="Lachender Mann auf einer Feier mit lachenden Menschen im Hintergrund"
+            />
+            <g-image
+              v-show="$useWebp === false"
+              src="../assets/images/index/mithelfen-img3.jpg"
+              alt="Lachender Mann auf einer Feier mit lachenden Menschen im Hintergrund"
+            />
+          </div>
         </div>
         <figcaption>
           <h3>3. Erlebe die Freude vor Ort</h3>
@@ -71,7 +79,9 @@
         </figcaption>
       </figure>
     </div>
-    <a class="btn" :href="$static.metadata.calendly_url">Probetermin vereinbaren</a>
+    <a class="btn" :href="$static.metadata.calendly_url"
+      >Probetermin vereinbaren</a
+    >
   </section>
 </template>
 
@@ -93,7 +103,7 @@ figure {
 figure:nth-child(2) {
   padding-left: 4rem;
   padding-right: 4rem;
-  
+
   img {
     object-position: 0 10%;
   }
@@ -148,19 +158,20 @@ a {
   background-size: 100%;
   width: 27.5rem;
   max-width: 100%;
-
+}
+.image {
   padding-bottom: 78%; /* Padding hack ratio */
   position: relative;
   overflow: hidden;
 }
-.image-container > img {
+.image > img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 6.4% 4% 13% 4.5%; 
+  padding: 6.4% 4% 13% 4.5%;
 }
 @media (max-width: $tablet-break) {
   .participate-container {
@@ -195,7 +206,7 @@ a {
         display: none;
       }
     }
-    
+
     /* flex play */
     @media (min-width: 626px) {
       figure:nth-child(odd) {
