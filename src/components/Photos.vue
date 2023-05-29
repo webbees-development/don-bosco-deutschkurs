@@ -159,33 +159,38 @@
 }
 
 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.image{
+  position: relative;
+  overflow: hidden;
 }
 
 
 .image:nth-child(1),
 .image:nth-child(7) {
   grid-column: span 7;
-  img {
-    aspect-ratio: 9/2;
-  }
+  padding-top: calc(2 / 9 * 100%);   /*aspect-ratio: 9/2;*/
+
 }
 .image:nth-child(2),
 .image:nth-child(6)  {
   grid-column: span 5;
-  img {
-    aspect-ratio: 1.4;
-  }
+  padding-top: calc(1 / 1.4 * 100%);   /*aspect-ratio: 1.4;*/
+
 }
 .image:nth-child(3),
 .image:nth-child(4),
 .image:nth-child(5) {
   grid-column: span 4;
-  img {
-    aspect-ratio: 1;
-  }
+  padding-top: calc(1 / 1 * 100%);   /*aspect-ratio: 1;*/
+
 }
 
 </style>
