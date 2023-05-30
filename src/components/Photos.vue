@@ -8,86 +8,86 @@
     <div class="image-grid">
       <div class="image">
         <g-image
-          v-show="$useWebp === true" 
-          src="../assets/images/index/photos-1.webp" 
-          alt="Willkommensposter in verschiedenen Sprachen" 
+          v-show="$useWebp === true"
+          src="../assets/images/index/photos-1.webp"
+          alt="Willkommensposter in verschiedenen Sprachen"
         />
         <g-image
-          v-show="$useWebp === false" 
-          src="../assets/images/index/photos-1.jpg" 
-          alt="Willkommensposter in verschiedenen Sprachen" 
+          v-show="$useWebp === false"
+          src="../assets/images/index/photos-1.jpg"
+          alt="Willkommensposter in verschiedenen Sprachen"
         />
       </div>
       <div class="image">
         <g-image
-          v-show="$useWebp === true" 
+          v-show="$useWebp === true"
           src="../assets/images/index/photos-2.webp"
-          alt="Jemand bekommt ein Armband angelegt" 
+          alt="Jemand bekommt ein Armband angelegt"
         />
         <g-image
-          v-show="$useWebp === false" 
+          v-show="$useWebp === false"
           src="../assets/images/index/photos-2.jpg"
-          alt="Jemand bekommt ein Armband angelegt" 
+          alt="Jemand bekommt ein Armband angelegt"
         />
       </div>
       <div class="image">
         <g-image
-          v-show="$useWebp === true" 
+          v-show="$useWebp === true"
           src="../assets/images/index/photos-4.webp"
-          alt="Ein Bild vom Deutschkurs wie die Schüler:innen am Tisch sitzen mit ihrer Lehrerin" 
+          alt="Ein Bild vom Deutschkurs wie die Schüler:innen am Tisch sitzen mit ihrer Lehrerin"
         />
         <g-image
-          v-show="$useWebp === false" 
+          v-show="$useWebp === false"
           src="../assets/images/index/photos-4.jpg"
-          alt="Ein Bild vom Deutschkurs wie die Schüler:innen am Tisch sitzen mit ihrer Lehrerin" 
+          alt="Ein Bild vom Deutschkurs wie die Schüler:innen am Tisch sitzen mit ihrer Lehrerin"
         />
       </div>
       <div class="image">
         <g-image
-          v-show="$useWebp === true" 
+          v-show="$useWebp === true"
           src="../assets/images/index/photos-9.webp"
-          alt="Eine Freiwillige schaut einem Lernenden über die Schulter" 
+          alt="Eine Freiwillige schaut einem Lernenden über die Schulter"
         />
         <g-image
-          v-show="$useWebp === false" 
+          v-show="$useWebp === false"
           src="../assets/images/index/photos-9.jpg"
-          alt="Eine Freiwillige schaut einem Lernenden über die Schulter" 
+          alt="Eine Freiwillige schaut einem Lernenden über die Schulter"
         />
       </div>
       <div class="image">
         <g-image
-          v-show="$useWebp === true" 
+          v-show="$useWebp === true"
           src="../assets/images/index/photos-3.webp"
-          alt="Freiwillige posieren auf einer Treppe" 
+          alt="Freiwillige posieren auf einer Treppe"
         />
         <g-image
-          v-show="$useWebp === false" 
+          v-show="$useWebp === false"
           src="../assets/images/index/photos-3.jpg"
-          alt="Freiwillige posieren auf einer Treppe" 
+          alt="Freiwillige posieren auf einer Treppe"
         />
       </div>
       <div class="image">
         <g-image
-          v-show="$useWebp === true" 
+          v-show="$useWebp === true"
           src="../assets/images/index/photos-8.jpg"
-          alt="Eine Freiwillige sitzt mit 3 Schülern zusammen auf der Couch" 
+          alt="Eine Freiwillige sitzt mit 3 Schülern zusammen auf der Couch"
         />
         <g-image
-          v-show="$useWebp === false" 
+          v-show="$useWebp === false"
           src="../assets/images/index/photos-8.jpg"
-          alt="Eine Freiwillige sitzt mit 3 Schülern zusammen auf der Couch" 
+          alt="Eine Freiwillige sitzt mit 3 Schülern zusammen auf der Couch"
         />
       </div>
       <div class="image">
         <g-image
-          v-show="$useWebp === true" 
+          v-show="$useWebp === true"
           src="../assets/images/index/photos-5.jpg"
-          alt="Gruppenfoto vom Faschingsfest" 
+          alt="Gruppenfoto vom Faschingsfest"
         />
         <g-image
-          v-show="$useWebp === false" 
+          v-show="$useWebp === false"
           src="../assets/images/index/photos-5.jpg"
-          alt="Gruppenfoto vom Faschingsfest" 
+          alt="Gruppenfoto vom Faschingsfest"
         />
       </div>
     </div>
@@ -135,9 +135,7 @@
     .image:nth-of-type(even),
     .image:nth-of-type(odd) {
       grid-column: span 1;
-      img {
-        aspect-ratio: 1;
-      }
+      padding-top: calc(1 / 1 * 100%); /*aspect-ratio: 1;*/
     }
     .image:last-child {
       display: none;
@@ -150,9 +148,10 @@
     padding-bottom: 3rem;
 
     .image:nth-child(n) {
+      padding-top: calc(1 / 1.4 * 100%); /*aspect-ratio: 1.4;*/
+
       img {
-        aspect-ratio: 1.4;
-        padding-bottom: 2rem;
+        padding-bottom: 1.5rem;
       }
     }
   }
@@ -167,30 +166,25 @@ img {
   height: 100%;
   object-fit: cover;
 }
-.image{
+.image {
   position: relative;
   overflow: hidden;
 }
 
-
 .image:nth-child(1),
 .image:nth-child(7) {
   grid-column: span 7;
-  padding-top: calc(2 / 9 * 100%);   /*aspect-ratio: 9/2;*/
-
+  padding-top: calc(2 / 9 * 100%); /*aspect-ratio: 9/2;*/
 }
 .image:nth-child(2),
-.image:nth-child(6)  {
+.image:nth-child(6) {
   grid-column: span 5;
-  padding-top: calc(1 / 1.4 * 100%);   /*aspect-ratio: 1.4;*/
-
+  padding-top: calc(1 / 1.4 * 100%); /*aspect-ratio: 1.4;*/
 }
 .image:nth-child(3),
 .image:nth-child(4),
 .image:nth-child(5) {
   grid-column: span 4;
-  padding-top: calc(1 / 1 * 100%);   /*aspect-ratio: 1;*/
-
+  padding-top: calc(1 / 1 * 100%); /*aspect-ratio: 1;*/
 }
-
 </style>
