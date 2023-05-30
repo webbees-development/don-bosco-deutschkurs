@@ -84,6 +84,9 @@ h2 {
   @media (max-width: 650px) {
     --carousel-btn-upper-spacing: 21%;
   }
+  @media (max-width: 450px) {
+    --carousel-btn-upper-spacing: 16%;
+  }
 }
 .btn {
   margin-top: 5rem;
